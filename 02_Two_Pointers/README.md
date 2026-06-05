@@ -54,11 +54,11 @@ why O(N²) collapses to O(N).
 
 ## Classic Problems in This Pattern
 
-| LC # | Problem Name                          | Difficulty |
-| ---- | ------------------------------------- | ---------- |
-| 167  | Two Sum II – Input Array Is Sorted    | 🟡 Medium  |
-| 15   | 3Sum                                  | 🟡 Medium  |
-| 11   | Container With Most Water             | 🟡 Medium  |
-| 26   | Remove Duplicates from Sorted Array   | 🟢 Easy    |
-| 125  | Valid Palindrome                      | 🟢 Easy    |
-| 42   | Trapping Rain Water                   | 🔴 Hard    |
+| LC # | Problem Name                          | Difficulty | File |
+| ---- | ------------------------------------- | ---------- | ---- |
+| 167  | Two Sum II – Input Array Is Sorted    | 🟡 Medium  | [167_TwoSumII_Optimized.cpp](./167_TwoSumII_Optimized.cpp) |
+| 15   | 3Sum                                  | 🟡 Medium  | — |
+| 11   | Container With Most Water             | 🟡 Medium  | — |
+| 26   | Remove Duplicates from Sorted Array   | 🟢 Easy    | [26_RemoveDuplicates.cpp](./26_RemoveDuplicates.cpp) |
+| 125  | Valid Palindrome                      | 🟢 Easy    | — |
+| 42   | Trapping Rain Water                   | 🔴 Hard    | — |
