@@ -2,7 +2,7 @@
 
 ![Language](https://img.shields.io/badge/Language-C++-00599C?logo=cplusplus&logoColor=white)
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen)
-![Problems Solved](https://img.shields.io/badge/Problems%20Solved-4-blue)
+![Problems Solved](https://img.shields.io/badge/Problems%20Solved-5-blue)
 ![Patterns Covered](https://img.shields.io/badge/Patterns%20Covered-1-blueviolet)
 ![License](https://img.shields.io/badge/License-MIT-green)
 
@@ -24,6 +24,7 @@ dsa/
 │   ├── README.md                        ← Pattern cheat sheet
 │   ├── 167_TwoSumII_Optimized.cpp
 │   ├── 15_3Sum.cpp
+│   ├── 16_3SumClosest.cpp
 │   ├── 26_RemoveDuplicates.cpp
 │   └── 977_SortedSquares.cpp
 ├── .gitignore
@@ -39,7 +40,7 @@ Files follow the convention: `<LC#>_<ProblemName>_<Approach>.cpp`
 
 | # | Pattern | Folder | Problems Logged |
 |---|---------|--------|-----------------|
-| 02 | Two Pointers | [`02_Two_Pointers/`](./02_Two_Pointers/) | 4 |
+| 02 | Two Pointers | [`02_Two_Pointers/`](./02_Two_Pointers/) | 5 |
 
 ---
 
@@ -51,6 +52,7 @@ Files follow the convention: `<LC#>_<ProblemName>_<Approach>.cpp`
 | Two Pointers | 26  | Remove Duplicates from Sorted Array | 🟢 Easy | Original | ✅ Done |
 | Two Pointers | 977 | Squares of a Sorted Array | 🟢 Easy | Split & Merge | ✅ Done |
 | Two Pointers | 15  | 3Sum | 🟡 Medium | Fix + Two Pointers | ✅ Done |
+| Two Pointers | 16  | 3Sum Closest | 🟡 Medium | Fix + Two Pointers | ✅ Done |
 
 ---
 
@@ -107,6 +109,19 @@ g++ -std=c++17 -o solution 02_Two_Pointers/15_3Sum.cpp && ./solution
 [PASS] Test 2 | [0,1,1]            → []
 [PASS] Test 3 | [0,0,0]            → [[0,0,0]]
 [PASS] Test 4 | [-2,0,0,2,2]       → [[-2,0,2]]
+
+✅  All 4 tests passed.
+```
+
+**LC 16 – 3Sum Closest**
+```bash
+g++ -std=c++17 -o solution 02_Two_Pointers/16_3SumClosest.cpp && ./solution
+```
+```
+[PASS] Test 1 | [-1,2,1,-4] target=1   → 2
+[PASS] Test 2 | [0,0,0] target=1        → 0
+[PASS] Test 3 | [1,1,1,0] target=100    → 3
+[PASS] Test 4 | [1,2,5,10,11] target=12 → 13
 
 ✅  All 4 tests passed.
 ```
