@@ -57,7 +57,7 @@ why O(N²) collapses to O(N).
 | LC # | Problem Name                          | Difficulty | File |
 | ---- | ------------------------------------- | ---------- | ---- |
 | 167  | Two Sum II – Input Array Is Sorted    | 🟡 Medium  | [167_TwoSumII_Optimized.cpp](./167_TwoSumII_Optimized.cpp) |
-| 15   | 3Sum                                  | 🟡 Medium  | — |
+| 15   | 3Sum                                  | 🟡 Medium  | [15_3Sum.cpp](./15_3Sum.cpp) |
 | 11   | Container With Most Water             | 🟡 Medium  | — |
 | 26   | Remove Duplicates from Sorted Array   | 🟢 Easy    | [26_RemoveDuplicates.cpp](./26_RemoveDuplicates.cpp) |
 | 977  | Squares of a Sorted Array             | 🟢 Easy    | [977_SortedSquares.cpp](./977_SortedSquares.cpp) |
