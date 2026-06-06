@@ -60,5 +60,6 @@ why O(N²) collapses to O(N).
 | 15   | 3Sum                                  | 🟡 Medium  | — |
 | 11   | Container With Most Water             | 🟡 Medium  | — |
 | 26   | Remove Duplicates from Sorted Array   | 🟢 Easy    | [26_RemoveDuplicates.cpp](./26_RemoveDuplicates.cpp) |
+| 977  | Squares of a Sorted Array             | 🟢 Easy    | [977_SortedSquares.cpp](./977_SortedSquares.cpp) |
 | 125  | Valid Palindrome                      | 🟢 Easy    | — |
 | 42   | Trapping Rain Water                   | 🔴 Hard    | — |

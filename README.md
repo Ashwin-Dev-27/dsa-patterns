@@ -2,7 +2,7 @@
 
 ![Language](https://img.shields.io/badge/Language-C++-00599C?logo=cplusplus&logoColor=white)
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen)
-![Problems Solved](https://img.shields.io/badge/Problems%20Solved-2-blue)
+![Problems Solved](https://img.shields.io/badge/Problems%20Solved-3-blue)
 ![Patterns Covered](https://img.shields.io/badge/Patterns%20Covered-1-blueviolet)
 ![License](https://img.shields.io/badge/License-MIT-green)
 
@@ -23,7 +23,8 @@ dsa/
 ├── 02_Two_Pointers/
 │   ├── README.md                        ← Pattern cheat sheet
 │   ├── 167_TwoSumII_Optimized.cpp
-│   └── 26_RemoveDuplicates.cpp
+│   ├── 26_RemoveDuplicates.cpp
+│   └── 977_SortedSquares.cpp
 ├── .gitignore
 └── README.md                            ← You are here
 ```
@@ -47,6 +48,7 @@ Files follow the convention: `<LC#>_<ProblemName>_<Approach>.cpp`
 |---------|------|--------------|------------|-------------------|--------|
 | Two Pointers | 167 | Two Sum II – Input Array Is Sorted | 🟡 Medium | Optimized | ✅ Done |
 | Two Pointers | 26  | Remove Duplicates from Sorted Array | 🟢 Easy | Original | ✅ Done |
+| Two Pointers | 977 | Squares of a Sorted Array | 🟢 Easy | Split & Merge | ✅ Done |
 
 ---
 
@@ -76,6 +78,20 @@ g++ -std=c++17 -o solution 02_Two_Pointers/26_RemoveDuplicates.cpp && ./solution
 [PASS] Test 3 | []                    → k=0
 [PASS] Test 4 | [1,2,3,4,5]           → k=5
 [PASS] Test 5 | [7,7,7,7]             → k=1
+
+✅  All 5 tests passed.
+```
+
+**LC 977 – Squares of a Sorted Array**
+```bash
+g++ -std=c++17 -o solution 02_Two_Pointers/977_SortedSquares.cpp && ./solution
+```
+```
+[PASS] Test 1 | [-4,-1,0,3,10]  → [0,1,9,16,100]
+[PASS] Test 2 | [-7,-3,2,3,11]  → [4,9,9,49,121]
+[PASS] Test 3 | [1,2,3]          → [1,4,9]
+[PASS] Test 4 | [-3,-2,-1]       → [1,4,9]
+[PASS] Test 5 | [0]              → [0]
 
 ✅  All 5 tests passed.
 ```
