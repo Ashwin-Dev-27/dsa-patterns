@@ -64,3 +64,4 @@ why O(N²) collapses to O(N).
 | 977  | Squares of a Sorted Array             | 🟢 Easy    | [977_SortedSquares.cpp](./977_SortedSquares.cpp) |
 | 125  | Valid Palindrome                      | 🟢 Easy    | — |
 | 42   | Trapping Rain Water                   | 🔴 Hard    | — |
+| GFG  | Count Triplets with Given Sum         | 🟡 Medium  | [CountTriplets_GFG.cpp](./CountTriplets_GFG.cpp) |
