@@ -2,7 +2,7 @@
 
 ![Language](https://img.shields.io/badge/Language-C++-00599C?logo=cplusplus&logoColor=white)
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen)
-![Problems Solved](https://img.shields.io/badge/Problems%20Solved-6-blue)
+![Problems Solved](https://img.shields.io/badge/Problems%20Solved-7-blue)
 ![Patterns Covered](https://img.shields.io/badge/Patterns%20Covered-1-blueviolet)
 ![License](https://img.shields.io/badge/License-MIT-green)
 
@@ -26,6 +26,7 @@ dsa/
 │   ├── 15_3Sum.cpp
 │   ├── 16_3SumClosest.cpp
 │   ├── 26_RemoveDuplicates.cpp
+│   ├── 75_SortColors.cpp
 │   ├── 977_SortedSquares.cpp
 │   └── CountTriplets_GFG.cpp
 ├── .gitignore
@@ -41,7 +42,7 @@ Files follow the convention: `<LC#>_<ProblemName>_<Approach>.cpp`
 
 | # | Pattern | Folder | Problems Logged |
 |---|---------|--------|-----------------|
-| 02 | Two Pointers | [`02_Two_Pointers/`](./02_Two_Pointers/) | 6 |
+| 02 | Two Pointers | [`02_Two_Pointers/`](./02_Two_Pointers/) | 7 |
 
 ---
 
@@ -55,6 +56,7 @@ Files follow the convention: `<LC#>_<ProblemName>_<Approach>.cpp`
 | Two Pointers | 15  | 3Sum | 🟡 Medium | Fix + Two Pointers | ✅ Done |
 | Two Pointers | 16  | 3Sum Closest | 🟡 Medium | Fix + Two Pointers | ✅ Done |
 | Two Pointers | GFG | Count Triplets with Given Sum | 🟡 Medium | Fix + Two Pointers | ✅ Done |
+| Two Pointers | 75 | Sort Colors | 🟡 Medium | Dutch National Flag | ✅ Done |
 
 ---
 
@@ -139,6 +141,21 @@ g++ -std=c++17 -o solution 02_Two_Pointers/CountTriplets_GFG.cpp && ./solution
 [PASS] Test 4 | arr=[1,2,3,4,5], sum=12  → 9
 
 ✅  All 4 tests passed.
+```
+
+**LC 75 – Sort Colors**
+```bash
+g++ -std=c++17 -o solution 02_Two_Pointers/75_SortColors.cpp && ./solution
+```
+```
+[PASS] Test 1 | [2,0,2,1,1,0] → [0,0,1,1,2,2]
+[PASS] Test 2 | [2,0,1]       → [0,1,2]
+[PASS] Test 3 | []            → []
+[PASS] Test 4 | [0]           → [0]
+[PASS] Test 5 | [0,1,2]       → [0,1,2]
+[PASS] Test 6 | [2,2,2]       → [2,2,2]
+
+✅  All 6 tests passed.
 ```
 
 ---
