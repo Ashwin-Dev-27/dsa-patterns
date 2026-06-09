@@ -2,7 +2,7 @@
 
 ![Language](https://img.shields.io/badge/Language-C++-00599C?logo=cplusplus&logoColor=white)
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen)
-![Problems Solved](https://img.shields.io/badge/Problems%20Solved-9-blue)
+![Problems Solved](https://img.shields.io/badge/Problems%20Solved-10-blue)
 ![Patterns Covered](https://img.shields.io/badge/Patterns%20Covered-2-blueviolet)
 ![License](https://img.shields.io/badge/License-MIT-green)
 
@@ -32,6 +32,7 @@ dsa/
 ├── 03_Sliding_Window/
 │   ├── README.md                        ← Pattern cheat sheet
 │   ├── 209_MinSizeSubarraySum.cpp
+│   ├── LongestKSubstr_GFG.cpp
 │   └── MaxSumSubarray_GFG.cpp
 ├── .gitignore
 └── README.md                            ← You are here
@@ -47,7 +48,7 @@ Files follow the convention: `<LC#>_<ProblemName>_<Approach>.cpp`
 | # | Pattern | Folder | Problems Logged |
 |---|---------|--------|-----------------|
 | 02 | Two Pointers | [`02_Two_Pointers/`](./02_Two_Pointers/) | 7 |
-| 03 | Sliding Window | [`03_Sliding_Window/`](./03_Sliding_Window/) | 2 |
+| 03 | Sliding Window | [`03_Sliding_Window/`](./03_Sliding_Window/) | 3 |
 
 ---
 
@@ -64,6 +65,7 @@ Files follow the convention: `<LC#>_<ProblemName>_<Approach>.cpp`
 | Two Pointers | 75 | Sort Colors | 🟡 Medium | Dutch National Flag | ✅ Done |
 | Sliding Window | GFG | Max Sum Subarray of size K | 🟢 Easy | Original | ✅ Done |
 | Sliding Window | 209 | Minimum Size Subarray Sum | 🟡 Medium | Original | ✅ Done |
+| Sliding Window | GFG | Longest K Unique Characters Substring | 🟡 Medium | Original | ✅ Done |
 
 ---
 
@@ -189,6 +191,20 @@ g++ -std=c++17 -o solution 03_Sliding_Window/209_MinSizeSubarraySum.cpp && ./sol
 [PASS] Test 3 | nums=[1,1,1,1,1,1,1,1], target=11 → 0
 [PASS] Test 4 | nums=[2,3,1,1,1,1], target=5 → 2
 [PASS] Test 5 | nums=[1,1,1], target=3       → 3
+
+✅  All 5 tests passed.
+```
+
+**GFG – Longest K Unique Characters Substring**
+```bash
+g++ -std=c++17 -o solution 03_Sliding_Window/LongestKSubstr_GFG.cpp && ./solution
+```
+```
+[PASS] Test 1 | s="aabacbebebe", k=3 → 7
+[PASS] Test 2 | s="aaaa", k=2        → -1
+[PASS] Test 3 | s="eceba", k=2       → 3
+[PASS] Test 4 | s="a", k=1           → 1
+[PASS] Test 5 | s="abacbebebe", k=3 → 7
 
 ✅  All 5 tests passed.
 ```
