@@ -2,8 +2,8 @@
 
 ![Language](https://img.shields.io/badge/Language-C++-00599C?logo=cplusplus&logoColor=white)
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen)
-![Problems Solved](https://img.shields.io/badge/Problems%20Solved-7-blue)
-![Patterns Covered](https://img.shields.io/badge/Patterns%20Covered-1-blueviolet)
+![Problems Solved](https://img.shields.io/badge/Problems%20Solved-8-blue)
+![Patterns Covered](https://img.shields.io/badge/Patterns%20Covered-2-blueviolet)
 ![License](https://img.shields.io/badge/License-MIT-green)
 
 A structured, pattern-first collection of DSA problems — built for **deep understanding**,
@@ -29,6 +29,9 @@ dsa/
 │   ├── 75_SortColors.cpp
 │   ├── 977_SortedSquares.cpp
 │   └── CountTriplets_GFG.cpp
+├── 03_Sliding_Window/
+│   ├── README.md                        ← Pattern cheat sheet
+│   └── MaxSumSubarray_GFG.cpp
 ├── .gitignore
 └── README.md                            ← You are here
 ```
@@ -43,6 +46,7 @@ Files follow the convention: `<LC#>_<ProblemName>_<Approach>.cpp`
 | # | Pattern | Folder | Problems Logged |
 |---|---------|--------|-----------------|
 | 02 | Two Pointers | [`02_Two_Pointers/`](./02_Two_Pointers/) | 7 |
+| 03 | Sliding Window | [`03_Sliding_Window/`](./03_Sliding_Window/) | 1 |
 
 ---
 
@@ -57,6 +61,7 @@ Files follow the convention: `<LC#>_<ProblemName>_<Approach>.cpp`
 | Two Pointers | 16  | 3Sum Closest | 🟡 Medium | Fix + Two Pointers | ✅ Done |
 | Two Pointers | GFG | Count Triplets with Given Sum | 🟡 Medium | Fix + Two Pointers | ✅ Done |
 | Two Pointers | 75 | Sort Colors | 🟡 Medium | Dutch National Flag | ✅ Done |
+| Sliding Window | GFG | Max Sum Subarray of size K | 🟢 Easy | Original | ✅ Done |
 
 ---
 
@@ -158,13 +163,27 @@ g++ -std=c++17 -o solution 02_Two_Pointers/75_SortColors.cpp && ./solution
 ✅  All 6 tests passed.
 ```
 
+**GFG – Max Sum Subarray of size K**
+```bash
+g++ -std=c++17 -o solution 03_Sliding_Window/MaxSumSubarray_GFG.cpp && ./solution
+```
+```
+[PASS] Test 1 | arr=[100, 200, 300, 400], k=2  → 700
+[PASS] Test 2 | arr=[1,4,2,10,2,3,1,0,20], k=4  → 24
+[PASS] Test 3 | arr=[2, 3], k=2                → 5
+[PASS] Test 4 | arr=[1, 2, 3, 4, 5], k=1        → 5
+[PASS] Test 5 | arr=[-1, -2, -3, -4], k=2       → -3
+
+✅  All 5 tests passed.
+```
+
 ---
 
 ## 🏗️ Patterns Roadmap
 
 - [ ] 01 — Arrays & Hashing
 - [x] **02 — Two Pointers**
-- [ ] 03 — Sliding Window
+- [x] **03 — Sliding Window**
 - [ ] 04 — Stack
 - [ ] 05 — Binary Search
 - [ ] 06 — Linked List
