@@ -2,7 +2,7 @@
 
 ![Language](https://img.shields.io/badge/Language-C++-00599C?logo=cplusplus&logoColor=white)
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen)
-![Problems Solved](https://img.shields.io/badge/Problems%20Solved-10-blue)
+![Problems Solved](https://img.shields.io/badge/Problems%20Solved-11-blue)
 ![Patterns Covered](https://img.shields.io/badge/Patterns%20Covered-2-blueviolet)
 ![License](https://img.shields.io/badge/License-MIT-green)
 
@@ -32,6 +32,7 @@ dsa/
 ├── 03_Sliding_Window/
 │   ├── README.md                        ← Pattern cheat sheet
 │   ├── 209_MinSizeSubarraySum.cpp
+│   ├── 904_FruitIntoBaskets.cpp
 │   ├── LongestKSubstr_GFG.cpp
 │   └── MaxSumSubarray_GFG.cpp
 ├── .gitignore
@@ -48,7 +49,7 @@ Files follow the convention: `<LC#>_<ProblemName>_<Approach>.cpp`
 | # | Pattern | Folder | Problems Logged |
 |---|---------|--------|-----------------|
 | 02 | Two Pointers | [`02_Two_Pointers/`](./02_Two_Pointers/) | 7 |
-| 03 | Sliding Window | [`03_Sliding_Window/`](./03_Sliding_Window/) | 3 |
+| 03 | Sliding Window | [`03_Sliding_Window/`](./03_Sliding_Window/) | 4 |
 
 ---
 
@@ -66,6 +67,7 @@ Files follow the convention: `<LC#>_<ProblemName>_<Approach>.cpp`
 | Sliding Window | GFG | Max Sum Subarray of size K | 🟢 Easy | Original | ✅ Done |
 | Sliding Window | 209 | Minimum Size Subarray Sum | 🟡 Medium | Original | ✅ Done |
 | Sliding Window | GFG | Longest K Unique Characters Substring | 🟡 Medium | Original | ✅ Done |
+| Sliding Window | 904 | Fruit Into Baskets | 🟡 Medium | Original | ✅ Done |
 
 ---
 
@@ -205,6 +207,20 @@ g++ -std=c++17 -o solution 03_Sliding_Window/LongestKSubstr_GFG.cpp && ./solutio
 [PASS] Test 3 | s="eceba", k=2       → 3
 [PASS] Test 4 | s="a", k=1           → 1
 [PASS] Test 5 | s="abacbebebe", k=3 → 7
+
+✅  All 5 tests passed.
+```
+
+**LC 904 – Fruit Into Baskets**
+```bash
+g++ -std=c++17 -o solution 03_Sliding_Window/904_FruitIntoBaskets.cpp && ./solution
+```
+```
+[PASS] Test 1 | fruits=[1,2,1]                     → 3
+[PASS] Test 2 | fruits=[0,1,2,2]                   → 3
+[PASS] Test 3 | fruits=[1,2,3,2,2]                 → 4
+[PASS] Test 4 | fruits=[3,3,3,1,2,1,1,2,3,3,4]     → 5
+[PASS] Test 5 | fruits=[0]                         → 1
 
 ✅  All 5 tests passed.
 ```
