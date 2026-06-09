@@ -2,7 +2,7 @@
 
 ![Language](https://img.shields.io/badge/Language-C++-00599C?logo=cplusplus&logoColor=white)
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen)
-![Problems Solved](https://img.shields.io/badge/Problems%20Solved-8-blue)
+![Problems Solved](https://img.shields.io/badge/Problems%20Solved-9-blue)
 ![Patterns Covered](https://img.shields.io/badge/Patterns%20Covered-2-blueviolet)
 ![License](https://img.shields.io/badge/License-MIT-green)
 
@@ -31,6 +31,7 @@ dsa/
 │   └── CountTriplets_GFG.cpp
 ├── 03_Sliding_Window/
 │   ├── README.md                        ← Pattern cheat sheet
+│   ├── 209_MinSizeSubarraySum.cpp
 │   └── MaxSumSubarray_GFG.cpp
 ├── .gitignore
 └── README.md                            ← You are here
@@ -46,7 +47,7 @@ Files follow the convention: `<LC#>_<ProblemName>_<Approach>.cpp`
 | # | Pattern | Folder | Problems Logged |
 |---|---------|--------|-----------------|
 | 02 | Two Pointers | [`02_Two_Pointers/`](./02_Two_Pointers/) | 7 |
-| 03 | Sliding Window | [`03_Sliding_Window/`](./03_Sliding_Window/) | 1 |
+| 03 | Sliding Window | [`03_Sliding_Window/`](./03_Sliding_Window/) | 2 |
 
 ---
 
@@ -62,6 +63,7 @@ Files follow the convention: `<LC#>_<ProblemName>_<Approach>.cpp`
 | Two Pointers | GFG | Count Triplets with Given Sum | 🟡 Medium | Fix + Two Pointers | ✅ Done |
 | Two Pointers | 75 | Sort Colors | 🟡 Medium | Dutch National Flag | ✅ Done |
 | Sliding Window | GFG | Max Sum Subarray of size K | 🟢 Easy | Original | ✅ Done |
+| Sliding Window | 209 | Minimum Size Subarray Sum | 🟡 Medium | Original | ✅ Done |
 
 ---
 
@@ -173,6 +175,20 @@ g++ -std=c++17 -o solution 03_Sliding_Window/MaxSumSubarray_GFG.cpp && ./solutio
 [PASS] Test 3 | arr=[2, 3], k=2                → 5
 [PASS] Test 4 | arr=[1, 2, 3, 4, 5], k=1        → 5
 [PASS] Test 5 | arr=[-1, -2, -3, -4], k=2       → -3
+
+✅  All 5 tests passed.
+```
+
+**LC 209 – Minimum Size Subarray Sum**
+```bash
+g++ -std=c++17 -o solution 03_Sliding_Window/209_MinSizeSubarraySum.cpp && ./solution
+```
+```
+[PASS] Test 1 | nums=[2,3,1,2,4,3], target=7 → 2
+[PASS] Test 2 | nums=[1,4,4], target=4       → 1
+[PASS] Test 3 | nums=[1,1,1,1,1,1,1,1], target=11 → 0
+[PASS] Test 4 | nums=[2,3,1,1,1,1], target=5 → 2
+[PASS] Test 5 | nums=[1,1,1], target=3       → 3
 
 ✅  All 5 tests passed.
 ```

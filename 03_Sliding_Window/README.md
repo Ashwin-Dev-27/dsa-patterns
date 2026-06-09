@@ -54,3 +54,4 @@ The window size changes dynamically based on constraints.
 | LC # | Problem Name                          | Difficulty | File |
 | ---- | ------------------------------------- | ---------- | ---- |
 | GFG  | Max Sum Subarray of size K            | 🟢 Easy    | [MaxSumSubarray_GFG.cpp](./MaxSumSubarray_GFG.cpp) |
+| 209  | Minimum Size Subarray Sum              | 🟡 Medium  | [209_MinSizeSubarraySum.cpp](./209_MinSizeSubarraySum.cpp) |
