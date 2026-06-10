@@ -33,6 +33,7 @@ dsa/
 │   ├── README.md                        ← Pattern cheat sheet
 │   ├── 209_MinSizeSubarraySum.cpp
 │   ├── 3_LongestSubstringWithoutRepeatingCharacters.cpp
+│   ├── 424_LongestRepeatingCharacterReplacement.cpp
 │   ├── 904_FruitIntoBaskets.cpp
 │   ├── LongestKSubstr_GFG.cpp
 │   └── MaxSumSubarray_GFG.cpp
@@ -50,7 +51,7 @@ Files follow the convention: `<LC#>_<ProblemName>_<Approach>.cpp`
 | # | Pattern | Folder | Problems Logged |
 |---|---------|--------|-----------------|
 | 02 | Two Pointers | [`02_Two_Pointers/`](./02_Two_Pointers/) | 7 |
-| 03 | Sliding Window | [`03_Sliding_Window/`](./03_Sliding_Window/) | 5 |
+| 03 | Sliding Window | [`03_Sliding_Window/`](./03_Sliding_Window/) | 6 |
 
 ---
 
@@ -68,6 +69,7 @@ Files follow the convention: `<LC#>_<ProblemName>_<Approach>.cpp`
 | Sliding Window | GFG | Max Sum Subarray of size K | 🟢 Easy | Original | ✅ Done |
 | Sliding Window | 3 | Longest Substring Without Repeating Characters | 🟡 Medium | Original | ✅ Done |
 | Sliding Window | 209 | Minimum Size Subarray Sum | 🟡 Medium | Original | ✅ Done |
+| Sliding Window | 424 | Longest Repeating Character Replacement | 🟡 Medium | Optimized | ✅ Done |
 | Sliding Window | GFG | Longest K Unique Characters Substring | 🟡 Medium | Original | ✅ Done |
 | Sliding Window | 904 | Fruit Into Baskets | 🟡 Medium | Original | ✅ Done |
 
@@ -239,6 +241,17 @@ g++ -std=c++17 -o solution 03_Sliding_Window/904_FruitIntoBaskets.cpp && ./solut
 [PASS] Test 5 | fruits=[0]                         → 1
 
 ✅  All 5 tests passed.
+```
+
+**LC 424 – Longest Repeating Character Replacement**
+```bash
+g++ -std=c++17 -o solution 03_Sliding_Window/424_LongestRepeatingCharacterReplacement.cpp && ./solution
+```
+```
+[PASS] Test 1 | s="ABAB", k=2 → 4
+[PASS] Test 2 | s="AABABBA", k=1 → 4
+
+✅  All tests passed.
 ```
 
 ---
