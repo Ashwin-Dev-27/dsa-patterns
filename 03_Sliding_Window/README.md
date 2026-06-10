@@ -54,6 +54,8 @@ The window size changes dynamically based on constraints.
 | LC # | Problem Name                          | Difficulty | File |
 | ---- | ------------------------------------- | ---------- | ---- |
 | GFG  | Max Sum Subarray of size K            | 🟢 Easy    | [MaxSumSubarray_GFG.cpp](./MaxSumSubarray_GFG.cpp) |
+| 3    | Longest Substring Without Repeating Characters | 🟡 Medium  | [3_LongestSubstringWithoutRepeatingCharacters.cpp](./3_LongestSubstringWithoutRepeatingCharacters.cpp) |
 | 209  | Minimum Size Subarray Sum              | 🟡 Medium  | [209_MinSizeSubarraySum.cpp](./209_MinSizeSubarraySum.cpp) |
 | GFG  | Longest K Unique Characters Substring  | 🟡 Medium  | [LongestKSubstr_GFG.cpp](./LongestKSubstr_GFG.cpp) |
 | 904  | Fruit Into Baskets                     | 🟡 Medium  | [904_FruitIntoBaskets.cpp](./904_FruitIntoBaskets.cpp) |
+

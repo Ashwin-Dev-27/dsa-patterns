@@ -2,7 +2,7 @@
 
 ![Language](https://img.shields.io/badge/Language-C++-00599C?logo=cplusplus&logoColor=white)
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen)
-![Problems Solved](https://img.shields.io/badge/Problems%20Solved-11-blue)
+![Problems Solved](https://img.shields.io/badge/Problems%20Solved-12-blue)
 ![Patterns Covered](https://img.shields.io/badge/Patterns%20Covered-2-blueviolet)
 ![License](https://img.shields.io/badge/License-MIT-green)
 
@@ -32,6 +32,7 @@ dsa/
 ├── 03_Sliding_Window/
 │   ├── README.md                        ← Pattern cheat sheet
 │   ├── 209_MinSizeSubarraySum.cpp
+│   ├── 3_LongestSubstringWithoutRepeatingCharacters.cpp
 │   ├── 904_FruitIntoBaskets.cpp
 │   ├── LongestKSubstr_GFG.cpp
 │   └── MaxSumSubarray_GFG.cpp
@@ -49,7 +50,7 @@ Files follow the convention: `<LC#>_<ProblemName>_<Approach>.cpp`
 | # | Pattern | Folder | Problems Logged |
 |---|---------|--------|-----------------|
 | 02 | Two Pointers | [`02_Two_Pointers/`](./02_Two_Pointers/) | 7 |
-| 03 | Sliding Window | [`03_Sliding_Window/`](./03_Sliding_Window/) | 4 |
+| 03 | Sliding Window | [`03_Sliding_Window/`](./03_Sliding_Window/) | 5 |
 
 ---
 
@@ -65,6 +66,7 @@ Files follow the convention: `<LC#>_<ProblemName>_<Approach>.cpp`
 | Two Pointers | GFG | Count Triplets with Given Sum | 🟡 Medium | Fix + Two Pointers | ✅ Done |
 | Two Pointers | 75 | Sort Colors | 🟡 Medium | Dutch National Flag | ✅ Done |
 | Sliding Window | GFG | Max Sum Subarray of size K | 🟢 Easy | Original | ✅ Done |
+| Sliding Window | 3 | Longest Substring Without Repeating Characters | 🟡 Medium | Original | ✅ Done |
 | Sliding Window | 209 | Minimum Size Subarray Sum | 🟡 Medium | Original | ✅ Done |
 | Sliding Window | GFG | Longest K Unique Characters Substring | 🟡 Medium | Original | ✅ Done |
 | Sliding Window | 904 | Fruit Into Baskets | 🟡 Medium | Original | ✅ Done |
@@ -193,6 +195,20 @@ g++ -std=c++17 -o solution 03_Sliding_Window/209_MinSizeSubarraySum.cpp && ./sol
 [PASS] Test 3 | nums=[1,1,1,1,1,1,1,1], target=11 → 0
 [PASS] Test 4 | nums=[2,3,1,1,1,1], target=5 → 2
 [PASS] Test 5 | nums=[1,1,1], target=3       → 3
+
+✅  All 5 tests passed.
+```
+
+**LC 3 – Longest Substring Without Repeating Characters**
+```bash
+g++ -std=c++17 -o solution 03_Sliding_Window/3_LongestSubstringWithoutRepeatingCharacters.cpp && ./solution
+```
+```
+[PASS] Test 1 | s="abcabcbb" → 3
+[PASS] Test 2 | s="bbbbb"    → 1
+[PASS] Test 3 | s="pwwkew"   → 3
+[PASS] Test 4 | s=""         → 0
+[PASS] Test 5 | s="au"       → 2
 
 ✅  All 5 tests passed.
 ```
