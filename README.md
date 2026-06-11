@@ -2,7 +2,7 @@
 
 ![Language](https://img.shields.io/badge/Language-C++-00599C?logo=cplusplus&logoColor=white)
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen)
-![Problems Solved](https://img.shields.io/badge/Problems%20Solved-12-blue)
+![Problems Solved](https://img.shields.io/badge/Problems%20Solved-13-blue)
 ![Patterns Covered](https://img.shields.io/badge/Patterns%20Covered-2-blueviolet)
 ![License](https://img.shields.io/badge/License-MIT-green)
 
@@ -34,6 +34,7 @@ dsa/
 │   ├── 209_MinSizeSubarraySum.cpp
 │   ├── 3_LongestSubstringWithoutRepeatingCharacters.cpp
 │   ├── 424_LongestRepeatingCharacterReplacement.cpp
+│   ├── 76_MinimumWindowSubstring.cpp
 │   ├── 904_FruitIntoBaskets.cpp
 │   ├── LongestKSubstr_GFG.cpp
 │   └── MaxSumSubarray_GFG.cpp
@@ -51,7 +52,7 @@ Files follow the convention: `<LC#>_<ProblemName>_<Approach>.cpp`
 | # | Pattern | Folder | Problems Logged |
 |---|---------|--------|-----------------|
 | 02 | Two Pointers | [`02_Two_Pointers/`](./02_Two_Pointers/) | 7 |
-| 03 | Sliding Window | [`03_Sliding_Window/`](./03_Sliding_Window/) | 6 |
+| 03 | Sliding Window | [`03_Sliding_Window/`](./03_Sliding_Window/) | 7 |
 
 ---
 
@@ -72,6 +73,7 @@ Files follow the convention: `<LC#>_<ProblemName>_<Approach>.cpp`
 | Sliding Window | 424 | Longest Repeating Character Replacement | 🟡 Medium | Optimized | ✅ Done |
 | Sliding Window | GFG | Longest K Unique Characters Substring | 🟡 Medium | Original | ✅ Done |
 | Sliding Window | 904 | Fruit Into Baskets | 🟡 Medium | Original | ✅ Done |
+| Sliding Window | 76  | Minimum Window Substring | 🔴 Hard | Optimized | ✅ Done |
 
 ---
 
@@ -252,6 +254,21 @@ g++ -std=c++17 -o solution 03_Sliding_Window/424_LongestRepeatingCharacterReplac
 [PASS] Test 2 | s="AABABBA", k=1 → 4
 
 ✅  All tests passed.
+```
+
+**LC 76 – Minimum Window Substring**
+```bash
+g++ -std=c++17 -o solution 03_Sliding_Window/76_MinimumWindowSubstring.cpp && ./solution
+```
+```
+[PASS] Test 1 | s="ADOBECODEBANC", t="ABC"   → "BANC"
+[PASS] Test 2 | s="a", t="a"                  → "a"
+[PASS] Test 3 | s="a", t="aa"                 → ""
+[PASS] Test 4 | s="hello", t="xyz"             → ""
+[PASS] Test 5 | s="aab", t="aa"               → "aa"
+[PASS] Test 6 | s="cabwefgewcwaefgcf", t="cae" → "cwae"
+
+✅  All 6 tests passed.
 ```
 
 ---

@@ -59,4 +59,5 @@ The window size changes dynamically based on constraints.
 | 424  | Longest Repeating Character Replacement| 🟡 Medium  | [424_LongestRepeatingCharacterReplacement.cpp](./424_LongestRepeatingCharacterReplacement.cpp) |
 | GFG  | Longest K Unique Characters Substring  | 🟡 Medium  | [LongestKSubstr_GFG.cpp](./LongestKSubstr_GFG.cpp) |
 | 904  | Fruit Into Baskets                     | 🟡 Medium  | [904_FruitIntoBaskets.cpp](./904_FruitIntoBaskets.cpp) |
+| 76   | Minimum Window Substring               | 🔴 Hard    | [76_MinimumWindowSubstring.cpp](./76_MinimumWindowSubstring.cpp) |
 
