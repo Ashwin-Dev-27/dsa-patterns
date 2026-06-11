@@ -61,3 +61,87 @@ The window size changes dynamically based on constraints.
 | 904  | Fruit Into Baskets                     | 🟡 Medium  | [904_FruitIntoBaskets.cpp](./904_FruitIntoBaskets.cpp) |
 | 76   | Minimum Window Substring               | 🔴 Hard    | [76_MinimumWindowSubstring.cpp](./76_MinimumWindowSubstring.cpp) |
 
+---
+
+## 🚀 How to Run
+
+```bash
+# Generic pattern
+g++ -std=c++17 -o solution <file.cpp> && ./solution
+```
+
+| Problem | Command |
+|---------|---------|
+| GFG Max Sum | `g++ -std=c++17 -o solution MaxSumSubarray_GFG.cpp && ./solution` |
+| LC 3   | `g++ -std=c++17 -o solution 3_LongestSubstringWithoutRepeatingCharacters.cpp && ./solution` |
+| LC 209 | `g++ -std=c++17 -o solution 209_MinSizeSubarraySum.cpp && ./solution` |
+| LC 424 | `g++ -std=c++17 -o solution 424_LongestRepeatingCharacterReplacement.cpp && ./solution` |
+| GFG K  | `g++ -std=c++17 -o solution LongestKSubstr_GFG.cpp && ./solution` |
+| LC 904 | `g++ -std=c++17 -o solution 904_FruitIntoBaskets.cpp && ./solution` |
+| LC 76  | `g++ -std=c++17 -o solution 76_MinimumWindowSubstring.cpp && ./solution` |
+
+<details>
+<summary>Expected output for all problems</summary>
+
+**GFG Max Sum Subarray**
+```
+[PASS] Test 1 | arr=[100,200,300,400], k=2    → 700
+[PASS] Test 2 | arr=[1,4,2,10,2,3,1,0,20], k=4 → 24
+[PASS] Test 3 | arr=[2,3], k=2                → 5
+[PASS] Test 4 | arr=[1,2,3,4,5], k=1          → 5
+[PASS] Test 5 | arr=[-1,-2,-3,-4], k=2        → -3
+✅  All 5 tests passed.
+```
+**LC 3**
+```
+[PASS] Test 1 | s="abcabcbb" → 3
+[PASS] Test 2 | s="bbbbb"    → 1
+[PASS] Test 3 | s="pwwkew"   → 3
+[PASS] Test 4 | s=""         → 0
+[PASS] Test 5 | s="au"       → 2
+✅  All 5 tests passed.
+```
+**LC 209**
+```
+[PASS] Test 1 | nums=[2,3,1,2,4,3], target=7 → 2
+[PASS] Test 2 | nums=[1,4,4], target=4       → 1
+[PASS] Test 3 | nums=[1,1,1,1,1,1,1,1], target=11 → 0
+[PASS] Test 4 | nums=[2,3,1,1,1,1], target=5 → 2
+[PASS] Test 5 | nums=[1,1,1], target=3       → 3
+✅  All 5 tests passed.
+```
+**LC 424**
+```
+[PASS] Test 1 | s="ABAB", k=2    → 4
+[PASS] Test 2 | s="AABABBA", k=1 → 4
+✅  All tests passed.
+```
+**GFG Longest K Unique**
+```
+[PASS] Test 1 | s="aabacbebebe", k=3 → 7
+[PASS] Test 2 | s="aaaa", k=2        → -1
+[PASS] Test 3 | s="eceba", k=2       → 3
+[PASS] Test 4 | s="a", k=1           → 1
+[PASS] Test 5 | s="abacbebebe", k=3  → 7
+✅  All 5 tests passed.
+```
+**LC 904**
+```
+[PASS] Test 1 | fruits=[1,2,1]                   → 3
+[PASS] Test 2 | fruits=[0,1,2,2]                 → 3
+[PASS] Test 3 | fruits=[1,2,3,2,2]               → 4
+[PASS] Test 4 | fruits=[3,3,3,1,2,1,1,2,3,3,4]  → 5
+[PASS] Test 5 | fruits=[0]                       → 1
+✅  All 5 tests passed.
+```
+**LC 76**
+```
+[PASS] Test 1 | s="ADOBECODEBANC", t="ABC"    → "BANC"
+[PASS] Test 2 | s="a", t="a"                  → "a"
+[PASS] Test 3 | s="a", t="aa"                 → ""
+[PASS] Test 4 | s="hello", t="xyz"            → ""
+[PASS] Test 5 | s="aab", t="aa"               → "aa"
+[PASS] Test 6 | s="cabwefgewcwaefgcf", t="cae" → "cwae"
+✅  All 6 tests passed.
+```
+</details>
