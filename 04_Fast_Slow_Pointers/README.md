@@ -52,6 +52,7 @@ fast → moves 2 steps per iteration
 | ---- | ----------------------------------- | ---------- | ---- |
 | 141  | Linked List Cycle                   | 🟢 Easy    | [141_LinkedListCycle.cpp](./141_LinkedListCycle.cpp) |
 | 142  | Linked List Cycle II                | 🟡 Medium  | [142_LinkedListCycleII.cpp](./142_LinkedListCycleII.cpp) |
+| 876  | Middle of the Linked List           | 🟢 Easy    | [876_MiddleOfLinkedList.cpp](./876_MiddleOfLinkedList.cpp) |
 
 ---
 
@@ -66,6 +67,7 @@ g++ -std=c++17 -o solution <file.cpp> && ./solution
 |---------|---------|
 | LC 141 | `g++ -std=c++17 -o solution 141_LinkedListCycle.cpp && ./solution` |
 | LC 142 | `g++ -std=c++17 -o solution 142_LinkedListCycleII.cpp && ./solution` |
+| LC 876 | `g++ -std=c++17 -o solution 876_MiddleOfLinkedList.cpp && ./solution` |
 
 <details>
 <summary>Expected output for all problems</summary>
@@ -89,6 +91,17 @@ g++ -std=c++17 -o solution <file.cpp> && ./solution
 [PASS] Test 4 | [1]            no cycle   = nullptr → nullptr
 [PASS] Test 5 | [1→1]          cycle start = node(1) → node(1)
 [PASS] Test 6 | [1→2→3→4→5]→3  cycle start = node(3) → node(3)
+
+✅  All 6/6 tests passed.
+```
+**LC 876**
+```
+[PASS] Test 1 | []              empty list → nullptr
+[PASS] Test 2 | [1]            single node → node(1)
+[PASS] Test 3 | [1→2]          even, 2-node   → 2nd middle → node(2)
+[PASS] Test 4 | [1→2→3→4→5]   odd, 5-node    → middle → node(3)
+[PASS] Test 5 | [1→2→3→4→5→6] even, 6-node   → 2nd middle → node(4)
+[PASS] Test 6 | [1→2→3]        odd, 3-node    → middle → node(2)
 
 ✅  All 6/6 tests passed.
 ```

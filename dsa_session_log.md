@@ -1,7 +1,7 @@
 # 📓 DSA Session Log
 > **Repo:** [dsa-patterns](https://github.com/Ashwin-Dev-27/dsa-patterns) | `c:\Users\Ashwin kumar\Desktop\dsa`  
 > **Language:** C++ | **Pattern-first structure**  
-> Last updated: 2026-06-15 (Session 14)
+> Last updated: 2026-06-15 (Session 15)
 
 ---
 
@@ -70,6 +70,7 @@ dsa/
 | 14 | 76  | Minimum Window Substring | Sliding Window | 🔴 Hard | `76_MinimumWindowSubstring.cpp` | Variable window + two maps | `f37bbce` |
 | 15 | 141 | Linked List Cycle | Fast & Slow Pointers | 🟢 Easy | `141_LinkedListCycle.cpp` | Floyd's Cycle Detection | `8e13867` |
 | 16 | 142 | Linked List Cycle II | Fast & Slow Pointers | 🟡 Medium | `142_LinkedListCycleII.cpp` | Floyd's Phase 2 (find start) | `219d600` |
+| 17 | 876 | Middle of the Linked List | Fast & Slow Pointers | 🟢 Easy | `876_MiddleOfLinkedList.cpp` | Fast & Slow — slow at mid | `TBD` |
 
 ---
 
@@ -275,6 +276,29 @@ dsa/
 
 ---
 
+### Session 15 — 2026-06-15
+**By:** Antigravity
+**What was done:**
+- [x] User pasted LC 876 (Middle of the Linked List) solution
+- [x] Kept user's original code exactly as written
+- [x] Created `04_Fast_Slow_Pointers/876_MiddleOfLinkedList.cpp` with 6 test cases:
+  - Empty list (nullptr)
+  - Single node
+  - Two nodes (returns 2nd middle)
+  - Odd-length list (5 nodes) → exact middle
+  - Even-length list (6 nodes) → 2nd middle
+  - Three nodes
+- [x] Updated `04_Fast_Slow_Pointers/README.md` — added LC 876 row + run command + expected output
+- [x] Updated main `README.md`:
+  - Badge: Problems Solved `15 → 16`
+  - Directory tree: added `876_MiddleOfLinkedList.cpp`
+  - Pattern Index: count `2 → 3` for Fast & Slow Pointers
+  - Progress Tracker: added LC 876 row
+- [x] All 6/6 tests passing ✅
+- [x] Committed and pushed -> commit on master
+
+---
+
 ## 🗒️ User Preferences & Notes
 
 - **Do NOT refactor user's solution code** — keep it exactly as written
@@ -293,7 +317,7 @@ dsa/
 | 125 | Valid Palindrome | Two Pointers | Medium |
 | 42  | Trapping Rain Water | Two Pointers | Hard |
 | 142 | Linked List Cycle II (find start of cycle) | Fast & Slow Pointers | ~~High~~ ✅ Done |
-| 876 | Middle of the Linked List | Fast & Slow Pointers | Easy |
+| 876 | Middle of the Linked List | Fast & Slow Pointers | ~~Easy~~ ✅ Done |
 | 143 | Reorder List | Fast & Slow Pointers | Medium |
 | 206 | Reverse Linked List | Linked List | Easy |
 | — | Arrays & Hashing folder | 01_Arrays_Hashing | Not started |
