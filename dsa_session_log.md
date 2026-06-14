@@ -70,7 +70,7 @@ dsa/
 | 14 | 76  | Minimum Window Substring | Sliding Window | 🔴 Hard | `76_MinimumWindowSubstring.cpp` | Variable window + two maps | `f37bbce` |
 | 15 | 141 | Linked List Cycle | Fast & Slow Pointers | 🟢 Easy | `141_LinkedListCycle.cpp` | Floyd's Cycle Detection | `8e13867` |
 | 16 | 142 | Linked List Cycle II | Fast & Slow Pointers | 🟡 Medium | `142_LinkedListCycleII.cpp` | Floyd's Phase 2 (find start) | `219d600` |
-| 17 | 876 | Middle of the Linked List | Fast & Slow Pointers | 🟢 Easy | `876_MiddleOfLinkedList.cpp` | Fast & Slow — slow at mid | `TBD` |
+| 17 | 876 | Middle of the Linked List | Fast & Slow Pointers | 🟢 Easy | `876_MiddleOfLinkedList.cpp` | Fast & Slow — slow at mid | `754e24f` |
 
 ---
 
