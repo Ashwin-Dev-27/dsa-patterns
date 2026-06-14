@@ -51,6 +51,7 @@ fast → moves 2 steps per iteration
 | LC # | Problem Name                        | Difficulty | File |
 | ---- | ----------------------------------- | ---------- | ---- |
 | 141  | Linked List Cycle                   | 🟢 Easy    | [141_LinkedListCycle.cpp](./141_LinkedListCycle.cpp) |
+| 142  | Linked List Cycle II                | 🟡 Medium  | [142_LinkedListCycleII.cpp](./142_LinkedListCycleII.cpp) |
 
 ---
 
@@ -64,6 +65,7 @@ g++ -std=c++17 -o solution <file.cpp> && ./solution
 | Problem | Command |
 |---------|---------|
 | LC 141 | `g++ -std=c++17 -o solution 141_LinkedListCycle.cpp && ./solution` |
+| LC 142 | `g++ -std=c++17 -o solution 142_LinkedListCycleII.cpp && ./solution` |
 
 <details>
 <summary>Expected output for all problems</summary>
@@ -76,6 +78,17 @@ g++ -std=c++17 -o solution <file.cpp> && ./solution
 [PASS] Test 4 | [1] (single node, no loop) → false
 [PASS] Test 5 | [1→1] (self-loop) → true
 [PASS] Test 6 | nullptr (empty list) → false
+
+✅  All 6/6 tests passed.
+```
+**LC 142**
+```
+[PASS] Test 1 | [3→2→0→-4]→2  cycle start = node(2) → node(2)
+[PASS] Test 2 | [1→2]→1       cycle start = node(1) → node(1)
+[PASS] Test 3 | [1→2]          no cycle   = nullptr → nullptr
+[PASS] Test 4 | [1]            no cycle   = nullptr → nullptr
+[PASS] Test 5 | [1→1]          cycle start = node(1) → node(1)
+[PASS] Test 6 | [1→2→3→4→5]→3  cycle start = node(3) → node(3)
 
 ✅  All 6/6 tests passed.
 ```

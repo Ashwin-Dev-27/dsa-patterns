@@ -1,7 +1,7 @@
 # 📓 DSA Session Log
 > **Repo:** [dsa-patterns](https://github.com/Ashwin-Dev-27/dsa-patterns) | `c:\Users\Ashwin kumar\Desktop\dsa`  
 > **Language:** C++ | **Pattern-first structure**  
-> Last updated: 2026-06-15
+> Last updated: 2026-06-15 (Session 14)
 
 ---
 
@@ -69,6 +69,7 @@ dsa/
 | 13 | 424 | Longest Repeating Character Replacement | Sliding Window | 🟡 Medium | `424_LongestRepeatingCharacterReplacement.cpp` | Variable window + freq | `88accec` |
 | 14 | 76  | Minimum Window Substring | Sliding Window | 🔴 Hard | `76_MinimumWindowSubstring.cpp` | Variable window + two maps | `f37bbce` |
 | 15 | 141 | Linked List Cycle | Fast & Slow Pointers | 🟢 Easy | `141_LinkedListCycle.cpp` | Floyd's Cycle Detection | `8e13867` |
+| 16 | 142 | Linked List Cycle II | Fast & Slow Pointers | 🟡 Medium | `142_LinkedListCycleII.cpp` | Floyd's Phase 2 (find start) | `TBD` |
 
 ---
 
@@ -251,6 +252,29 @@ dsa/
 
 ---
 
+### Session 14 — 2026-06-15
+**By:** Antigravity
+**What was done:**
+- [x] User pasted LC 142 (Linked List Cycle II) solution
+- [x] Kept user's original code exactly as written (including `return 0` style for base case)
+- [x] Created `04_Fast_Slow_Pointers/142_LinkedListCycleII.cpp` with 6 test cases:
+  - Classic cycle, start at index 1
+  - Cycle at head (pos 0)
+  - No cycle, two nodes
+  - Single node, no self-loop
+  - Single node self-loop
+  - Longer list, cycle at index 2
+- [x] Updated `04_Fast_Slow_Pointers/README.md` — added LC 142 row + run command + expected output
+- [x] Updated main `README.md`:
+  - Badge: Problems Solved `14 → 15`
+  - Directory tree: added `142_LinkedListCycleII.cpp`
+  - Pattern Index: count `1 → 2` for Fast & Slow Pointers
+  - Progress Tracker: added LC 142 row
+- [x] All 6/6 tests passing ✅
+- [x] Committed and pushed -> commit on master
+
+---
+
 ## 🗒️ User Preferences & Notes
 
 - **Do NOT refactor user's solution code** — keep it exactly as written
@@ -268,7 +292,7 @@ dsa/
 | 11  | Container With Most Water | Two Pointers | High |
 | 125 | Valid Palindrome | Two Pointers | Medium |
 | 42  | Trapping Rain Water | Two Pointers | Hard |
-| 142 | Linked List Cycle II (find start of cycle) | Fast & Slow Pointers | High |
+| 142 | Linked List Cycle II (find start of cycle) | Fast & Slow Pointers | ~~High~~ ✅ Done |
 | 876 | Middle of the Linked List | Fast & Slow Pointers | Easy |
 | 143 | Reorder List | Fast & Slow Pointers | Medium |
 | 206 | Reverse Linked List | Linked List | Easy |
