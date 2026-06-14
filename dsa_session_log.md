@@ -69,7 +69,7 @@ dsa/
 | 13 | 424 | Longest Repeating Character Replacement | Sliding Window | 🟡 Medium | `424_LongestRepeatingCharacterReplacement.cpp` | Variable window + freq | `88accec` |
 | 14 | 76  | Minimum Window Substring | Sliding Window | 🔴 Hard | `76_MinimumWindowSubstring.cpp` | Variable window + two maps | `f37bbce` |
 | 15 | 141 | Linked List Cycle | Fast & Slow Pointers | 🟢 Easy | `141_LinkedListCycle.cpp` | Floyd's Cycle Detection | `8e13867` |
-| 16 | 142 | Linked List Cycle II | Fast & Slow Pointers | 🟡 Medium | `142_LinkedListCycleII.cpp` | Floyd's Phase 2 (find start) | `TBD` |
+| 16 | 142 | Linked List Cycle II | Fast & Slow Pointers | 🟡 Medium | `142_LinkedListCycleII.cpp` | Floyd's Phase 2 (find start) | `219d600` |
 
 ---
 
