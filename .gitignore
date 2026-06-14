@@ -18,3 +18,6 @@ Thumbs.db
 # Build directories
 build/
 cmake-build-*/
+
+# Internal session log (local only, not for repo)
+dsa_session_log.md
