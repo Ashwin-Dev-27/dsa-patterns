@@ -5,6 +5,7 @@
 ![Problems Solved](https://img.shields.io/badge/Problems%20Solved-19-blue)
 ![Patterns Covered](https://img.shields.io/badge/Patterns%20Covered-3-blueviolet)
 ![License](https://img.shields.io/badge/License-MIT-green)
+![Visitors](https://api.visitorbadge.io/api/visitors?path=Ashwin-Dev-27.dsa-patterns&countColor=%2300599C)
 
 A structured, pattern-first collection of DSA problems — built for **deep understanding**,
 clean **interview revision**, and a professional **portfolio**.
