@@ -32,6 +32,7 @@ fast → moves 2 steps per iteration
 | **"k-th node from end"**       | Offset two pointers by k steps             |
 | **"detect start of cycle"**    | Phase 2 of Floyd's: reset one pointer      |
 | **"happy number"**             | Cycle detection on number sequences        |
+| **"find duplicate (no extra space)"** | Array-as-linked-list + Floyd's      |
 
 ---
 
@@ -53,6 +54,7 @@ fast → moves 2 steps per iteration
 | 141  | Linked List Cycle                   | 🟢 Easy    | [141_LinkedListCycle.cpp](./141_LinkedListCycle.cpp) |
 | 142  | Linked List Cycle II                | 🟡 Medium  | [142_LinkedListCycleII.cpp](./142_LinkedListCycleII.cpp) |
 | 876  | Middle of the Linked List           | 🟢 Easy    | [876_MiddleOfLinkedList.cpp](./876_MiddleOfLinkedList.cpp) |
+| 287  | Find the Duplicate Number           | 🟡 Medium  | [287_FindDuplicateNumber.cpp](./287_FindDuplicateNumber.cpp) |
 
 ---
 
@@ -68,6 +70,7 @@ g++ -std=c++17 -o solution <file.cpp> && ./solution
 | LC 141 | `g++ -std=c++17 -o solution 141_LinkedListCycle.cpp && ./solution` |
 | LC 142 | `g++ -std=c++17 -o solution 142_LinkedListCycleII.cpp && ./solution` |
 | LC 876 | `g++ -std=c++17 -o solution 876_MiddleOfLinkedList.cpp && ./solution` |
+| LC 287 | `g++ -std=c++17 -o solution 287_FindDuplicateNumber.cpp && ./solution` |
 
 <details>
 <summary>Expected output for all problems</summary>
@@ -102,6 +105,17 @@ g++ -std=c++17 -o solution <file.cpp> && ./solution
 [PASS] Test 4 | [1→2→3→4→5]   odd, 5-node    → middle → node(3)
 [PASS] Test 5 | [1→2→3→4→5→6] even, 6-node   → 2nd middle → node(4)
 [PASS] Test 6 | [1→2→3]        odd, 3-node    → middle → node(2)
+
+✅  All 6/6 tests passed.
+```
+**LC 287**
+```
+[PASS] Test 1 | [1,3,4,2,2]                → duplicate = 2 → 2
+[PASS] Test 2 | [3,1,3,4,2]                → duplicate = 3 → 3
+[PASS] Test 3 | [1,1]                      → duplicate = 1 → 1
+[PASS] Test 4 | [2,2,2,2,2]                → duplicate = 2 → 2
+[PASS] Test 5 | [4,3,1,4,2]                → duplicate = 4 → 4
+[PASS] Test 6 | [1,2,3,4,5,6,5]            → duplicate = 5 → 5
 
 ✅  All 6/6 tests passed.
 ```

@@ -2,7 +2,7 @@
 
 ![Language](https://img.shields.io/badge/Language-C++-00599C?logo=cplusplus&logoColor=white)
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen)
-![Problems Solved](https://img.shields.io/badge/Problems%20Solved-16-blue)
+![Problems Solved](https://img.shields.io/badge/Problems%20Solved-18-blue)
 ![Patterns Covered](https://img.shields.io/badge/Patterns%20Covered-3-blueviolet)
 ![License](https://img.shields.io/badge/License-MIT-green)
 
@@ -42,6 +42,7 @@ dsa/
 │   ├── README.md                        ← Pattern cheat sheet
 │   ├── 141_LinkedListCycle.cpp
 │   ├── 142_LinkedListCycleII.cpp
+│   ├── 287_FindDuplicateNumber.cpp
 │   └── 876_MiddleOfLinkedList.cpp
 ├── .gitignore
 └── README.md                            ← You are here
@@ -58,7 +59,7 @@ Files follow the convention: `<LC#>_<ProblemName>_<Approach>.cpp`
 |---|---------|--------|-----------------|
 | 02 | Two Pointers | [`02_Two_Pointers/`](./02_Two_Pointers/) | 7 |
 | 03 | Sliding Window | [`03_Sliding_Window/`](./03_Sliding_Window/) | 7 |
-| 04 | Fast & Slow Pointers | [`04_Fast_Slow_Pointers/`](./04_Fast_Slow_Pointers/) | 3 |
+| 04 | Fast & Slow Pointers | [`04_Fast_Slow_Pointers/`](./04_Fast_Slow_Pointers/) | 4 |
 
 ---
 
@@ -83,6 +84,7 @@ Files follow the convention: `<LC#>_<ProblemName>_<Approach>.cpp`
 | Fast & Slow Pointers | 141 | Linked List Cycle | 🟢 Easy | Floyd's Detection | ✅ Done |
 | Fast & Slow Pointers | 142 | Linked List Cycle II | 🟡 Medium | Floyd's Phase 2 | ✅ Done |
 | Fast & Slow Pointers | 876 | Middle of the Linked List | 🟢 Easy | Fast reaches end | ✅ Done |
+| Fast & Slow Pointers | 287 | Find the Duplicate Number | 🟡 Medium | Array-as-list + Floyd's | ✅ Done |
 
 ---
 
