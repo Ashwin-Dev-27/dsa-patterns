@@ -55,6 +55,7 @@ fast → moves 2 steps per iteration
 | 142  | Linked List Cycle II                | 🟡 Medium  | [142_LinkedListCycleII.cpp](./142_LinkedListCycleII.cpp) |
 | 876  | Middle of the Linked List           | 🟢 Easy    | [876_MiddleOfLinkedList.cpp](./876_MiddleOfLinkedList.cpp) |
 | 287  | Find the Duplicate Number           | 🟡 Medium  | [287_FindDuplicateNumber.cpp](./287_FindDuplicateNumber.cpp) |
+| 202  | Happy Number                        | 🟢 Easy    | [202_HappyNumber.cpp](./202_HappyNumber.cpp) |
 
 ---
 
@@ -71,6 +72,7 @@ g++ -std=c++17 -o solution <file.cpp> && ./solution
 | LC 142 | `g++ -std=c++17 -o solution 142_LinkedListCycleII.cpp && ./solution` |
 | LC 876 | `g++ -std=c++17 -o solution 876_MiddleOfLinkedList.cpp && ./solution` |
 | LC 287 | `g++ -std=c++17 -o solution 287_FindDuplicateNumber.cpp && ./solution` |
+| LC 202 | `g++ -std=c++17 -o solution 202_HappyNumber.cpp && ./solution` |
 
 <details>
 <summary>Expected output for all problems</summary>
@@ -116,6 +118,17 @@ g++ -std=c++17 -o solution <file.cpp> && ./solution
 [PASS] Test 4 | [2,2,2,2,2]                → duplicate = 2 → 2
 [PASS] Test 5 | [4,3,1,4,2]                → duplicate = 4 → 4
 [PASS] Test 6 | [1,2,3,4,5,6,5]            → duplicate = 5 → 5
+
+✅  All 6/6 tests passed.
+```
+**LC 202**
+```
+[PASS] Test 1 | n=1                   → happy → true
+[PASS] Test 2 | n=19                  → happy → true
+[PASS] Test 3 | n=7                   → happy → true
+[PASS] Test 4 | n=2                   → unhappy → false
+[PASS] Test 5 | n=4                   → unhappy → false
+[PASS] Test 6 | n=100                 → happy → true
 
 ✅  All 6/6 tests passed.
 ```
