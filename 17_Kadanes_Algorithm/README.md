@@ -42,6 +42,7 @@ ans = max(ans, best_ending)
 | LC # | Problem Name                        | Difficulty | File |
 | ---- | ----------------------------------- | ---------- | ---- |
 | 53   | Maximum Subarray                    | 🟡 Medium  | [53_MaximumSubarray.cpp](./53_MaximumSubarray.cpp) |
+| GFG  | Smallest sum contiguous subarray    | 🟡 Medium  | [SmallestSumSubarray_GFG.cpp](./SmallestSumSubarray_GFG.cpp) |
 
 ---
 
@@ -55,6 +56,7 @@ g++ -std=c++17 -o solution <file.cpp> && ./solution
 | Problem | Command |
 |---------|---------|
 | LC 53 | `g++ -std=c++17 -o solution 53_MaximumSubarray.cpp && ./solution` |
+| GFG   | `g++ -std=c++17 -o solution SmallestSumSubarray_GFG.cpp && ./solution` |
 
 <details>
 <summary>Expected output for all problems</summary>
@@ -67,6 +69,17 @@ g++ -std=c++17 -o solution <file.cpp> && ./solution
 [PASS] Test 4 | [-1] -> max sum = -1
 [PASS] Test 5 | [-2,-1] -> max sum = -1
 [PASS] Test 6 | [-5,-4,-1,-7,-8] -> max sum = -1
+
+✅  All tests executed.
+```
+**GFG Smallest sum contiguous subarray**
+```
+[PASS] Test 1 | [3,-4,2,-3,-1,...] -> min sum = -6
+[PASS] Test 2 | [2,6,8,1,4] -> min sum = 1
+[PASS] Test 3 | [-2,-3,-4,-1] -> min sum = -10
+[PASS] Test 4 | [-1,-2,-3,-4] -> min sum = -10
+[PASS] Test 5 | [1] -> min sum = 1
+[PASS] Test 6 | [5,4,-1,7,8] -> min sum = -1
 
 ✅  All tests executed.
 ```
