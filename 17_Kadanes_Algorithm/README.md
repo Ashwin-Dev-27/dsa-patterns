@@ -39,11 +39,12 @@ ans = max(ans, best_ending)
 
 ## Classic Problems in This Pattern
 
-| LC # | Problem Name                        | Difficulty | File |
-| ---- | ----------------------------------- | ---------- | ---- |
-| 53   | Maximum Subarray                    | 🟡 Medium  | [53_MaximumSubarray.cpp](./53_MaximumSubarray.cpp) |
-| 152  | Maximum Product Subarray            | 🟡 Medium  | [152_MaximumProductSubarray.cpp](./152_MaximumProductSubarray.cpp) |
-| GFG  | Smallest sum contiguous subarray    | 🟡 Medium  | [SmallestSumSubarray_GFG.cpp](./SmallestSumSubarray_GFG.cpp) |
+| LC # | Problem Name                                    | Difficulty | File |
+| ---- | ----------------------------------------------- | ---------- | ---- |
+| 53   | Maximum Subarray                                | 🟡 Medium  | [53_MaximumSubarray.cpp](./53_MaximumSubarray.cpp) |
+| 152  | Maximum Product Subarray                        | 🟡 Medium  | [152_MaximumProductSubarray.cpp](./152_MaximumProductSubarray.cpp) |
+| 1186 | Maximum Subarray Sum with One Deletion          | 🟡 Medium  | [1186_MaximumSubarraySumWithOneDeletion.cpp](./1186_MaximumSubarraySumWithOneDeletion.cpp) |
+| GFG  | Smallest sum contiguous subarray                | 🟡 Medium  | [SmallestSumSubarray_GFG.cpp](./SmallestSumSubarray_GFG.cpp) |
 
 ---
 
@@ -58,6 +59,7 @@ g++ -std=c++17 -o solution <file.cpp> && ./solution
 |---------|---------|
 | LC 53 | `g++ -std=c++17 -o solution 53_MaximumSubarray.cpp && ./solution` |
 | LC 152| `g++ -std=c++17 -o solution 152_MaximumProductSubarray.cpp && ./solution` |
+| LC 1186| `g++ -std=c++17 -o solution 1186_MaximumSubarraySumWithOneDeletion.cpp && ./solution` |
 | GFG   | `g++ -std=c++17 -o solution SmallestSumSubarray_GFG.cpp && ./solution` |
 
 <details>
@@ -93,6 +95,19 @@ g++ -std=c++17 -o solution <file.cpp> && ./solution
 [PASS] Test 4 | [0,2] -> max product = 2
 [PASS] Test 5 | [-2] -> max product = -2
 [PASS] Test 6 | [-2,-3,7] -> max product = 42
+
+✅  All tests executed.
+```
+**LC 1186**
+```
+[PASS] Test 1 | [1,-2,0,3] -> max sum = 4
+[PASS] Test 2 | [1,-2,-2,3] -> max sum = 3
+[PASS] Test 3 | [-1,-1,-1,-1] -> max sum = -1
+[PASS] Test 4 | [10,-20,30] -> max sum = 40
+[PASS] Test 5 | [0] -> max sum = 0
+[PASS] Test 6 | [-1,2,3,-4,5] -> max sum = 10
+[PASS] Test 7 | [-1,-2] -> max sum = -1
+[PASS] Test 8 | [-2] -> max sum = -2
 
 ✅  All tests executed.
 ```
