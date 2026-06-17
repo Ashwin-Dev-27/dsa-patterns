@@ -42,6 +42,7 @@ ans = max(ans, best_ending)
 | LC # | Problem Name                        | Difficulty | File |
 | ---- | ----------------------------------- | ---------- | ---- |
 | 53   | Maximum Subarray                    | 🟡 Medium  | [53_MaximumSubarray.cpp](./53_MaximumSubarray.cpp) |
+| 152  | Maximum Product Subarray            | 🟡 Medium  | [152_MaximumProductSubarray.cpp](./152_MaximumProductSubarray.cpp) |
 | GFG  | Smallest sum contiguous subarray    | 🟡 Medium  | [SmallestSumSubarray_GFG.cpp](./SmallestSumSubarray_GFG.cpp) |
 
 ---
@@ -56,6 +57,7 @@ g++ -std=c++17 -o solution <file.cpp> && ./solution
 | Problem | Command |
 |---------|---------|
 | LC 53 | `g++ -std=c++17 -o solution 53_MaximumSubarray.cpp && ./solution` |
+| LC 152| `g++ -std=c++17 -o solution 152_MaximumProductSubarray.cpp && ./solution` |
 | GFG   | `g++ -std=c++17 -o solution SmallestSumSubarray_GFG.cpp && ./solution` |
 
 <details>
@@ -80,6 +82,17 @@ g++ -std=c++17 -o solution <file.cpp> && ./solution
 [PASS] Test 4 | [-1,-2,-3,-4] -> min sum = -10
 [PASS] Test 5 | [1] -> min sum = 1
 [PASS] Test 6 | [5,4,-1,7,8] -> min sum = -1
+
+✅  All tests executed.
+```
+**LC 152**
+```
+[PASS] Test 1 | [2,3,-2,4] -> max product = 6
+[PASS] Test 2 | [-2,0,-1] -> max product = 0
+[PASS] Test 3 | [-2,3,-4] -> max product = 24
+[PASS] Test 4 | [0,2] -> max product = 2
+[PASS] Test 5 | [-2] -> max product = -2
+[PASS] Test 6 | [-2,-3,7] -> max product = 42
 
 ✅  All tests executed.
 ```

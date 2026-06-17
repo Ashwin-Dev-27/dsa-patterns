@@ -2,7 +2,7 @@
 
 ![Language](https://img.shields.io/badge/Language-C++-00599C?logo=cplusplus&logoColor=white)
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen)
-![Problems Solved](https://img.shields.io/badge/Problems%20Solved-21-blue)
+![Problems Solved](https://img.shields.io/badge/Problems%20Solved-22-blue)
 ![Patterns Covered](https://img.shields.io/badge/Patterns%20Covered-4-blueviolet)
 ![License](https://img.shields.io/badge/License-MIT-green)
 ![Visitors](https://api.visitorbadge.io/api/visitors?path=Ashwin-Dev-27.dsa-patterns&countColor=%2300599C)
@@ -48,6 +48,7 @@ dsa/
 │   └── 876_MiddleOfLinkedList.cpp
 ├── 17_Kadanes_Algorithm/
 │   ├── README.md                        ← Pattern cheat sheet
+│   ├── 152_MaximumProductSubarray.cpp
 │   ├── 53_MaximumSubarray.cpp
 │   └── SmallestSumSubarray_GFG.cpp
 ├── .gitignore
@@ -66,7 +67,7 @@ Files follow the convention: `<LC#>_<ProblemName>_<Approach>.cpp`
 | 02 | Two Pointers | [`02_Two_Pointers/`](./02_Two_Pointers/) | 7 |
 | 03 | Sliding Window | [`03_Sliding_Window/`](./03_Sliding_Window/) | 7 |
 | 04 | Fast & Slow Pointers | [`04_Fast_Slow_Pointers/`](./04_Fast_Slow_Pointers/) | 5 |
-| 17 | Kadane's Algorithm | [`17_Kadanes_Algorithm/`](./17_Kadanes_Algorithm/) | 2 |
+| 17 | Kadane's Algorithm | [`17_Kadanes_Algorithm/`](./17_Kadanes_Algorithm/) | 3 |
 
 ---
 
@@ -94,6 +95,7 @@ Files follow the convention: `<LC#>_<ProblemName>_<Approach>.cpp`
 | Fast & Slow Pointers | 287 | Find the Duplicate Number | 🟡 Medium | Array-as-list + Floyd's | ✅ Done |
 | Fast & Slow Pointers | 202 | Happy Number | 🟢 Easy | Floyd's on digit-sum sequence | ✅ Done |
 | Kadane's Algorithm | 53 | Maximum Subarray | 🟡 Medium | Original | ✅ Done |
+| Kadane's Algorithm | 152 | Maximum Product Subarray | 🟡 Medium | Original | ✅ Done |
 | Kadane's Algorithm | GFG | Smallest sum contiguous subarray | 🟡 Medium | Original | ✅ Done |
 
 ---
