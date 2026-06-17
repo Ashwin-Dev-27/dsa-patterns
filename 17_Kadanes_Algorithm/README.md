@@ -43,6 +43,7 @@ ans = max(ans, best_ending)
 | ---- | ----------------------------------------------- | ---------- | ---- |
 | 53   | Maximum Subarray                                | 🟡 Medium  | [53_MaximumSubarray.cpp](./53_MaximumSubarray.cpp) |
 | 152  | Maximum Product Subarray                        | 🟡 Medium  | [152_MaximumProductSubarray.cpp](./152_MaximumProductSubarray.cpp) |
+| 918  | Maximum Sum Circular Subarray                   | 🟡 Medium  | [918_MaximumSumCircularSubarray.cpp](./918_MaximumSumCircularSubarray.cpp) |
 | 1186 | Maximum Subarray Sum with One Deletion          | 🟡 Medium  | [1186_MaximumSubarraySumWithOneDeletion.cpp](./1186_MaximumSubarraySumWithOneDeletion.cpp) |
 | 1749 | Maximum Absolute Sum of Any Subarray            | 🟡 Medium  | [1749_MaxAbsoluteSumOfAnySubarray.cpp](./1749_MaxAbsoluteSumOfAnySubarray.cpp) |
 | GFG  | Smallest sum contiguous subarray                | 🟡 Medium  | [SmallestSumSubarray_GFG.cpp](./SmallestSumSubarray_GFG.cpp) |
@@ -61,6 +62,7 @@ g++ -std=c++17 -o solution <file.cpp> && ./solution
 | LC 53 | `g++ -std=c++17 -o solution 53_MaximumSubarray.cpp && ./solution` |
 | LC 152| `g++ -std=c++17 -o solution 152_MaximumProductSubarray.cpp && ./solution` |
 | LC 1186| `g++ -std=c++17 -o solution 1186_MaximumSubarraySumWithOneDeletion.cpp && ./solution` |
+| LC 918 | `g++ -std=c++17 -o solution 918_MaximumSumCircularSubarray.cpp && ./solution` |
 | LC 1749| `g++ -std=c++17 -o solution 1749_MaxAbsoluteSumOfAnySubarray.cpp && ./solution` |
 | GFG   | `g++ -std=c++17 -o solution SmallestSumSubarray_GFG.cpp && ./solution` |
 
@@ -123,6 +125,18 @@ g++ -std=c++17 -o solution <file.cpp> && ./solution
 [PASS] Test 6 | [1,2,3] -> max abs sum = 6
 [PASS] Test 7 | [-1,-2,-3] -> max abs sum = 6
 [PASS] Test 8 | [3,-1,2] -> max abs sum = 4
+
+✅  All tests executed.
+```
+**LC 918**
+```
+[PASS] Test 1 | [1,-2,3,-2] -> max circular sum = 3
+[PASS] Test 2 | [5,-3,5] -> max circular sum = 10
+[PASS] Test 3 | [-3,-2,-3] -> max circular sum = -2
+[PASS] Test 4 | [3] -> max circular sum = 3
+[PASS] Test 5 | [-2] -> max circular sum = -2
+[PASS] Test 6 | [1,2,3] -> max circular sum = 6
+[PASS] Test 7 | [-1,-2,-3] -> max circular sum = -1
 
 ✅  All tests executed.
 ```
