@@ -1,43 +1,79 @@
+/*
+ * ============================================================================
+ *  Problem   : Maximum Absolute Sum of Any Subarray  (LeetCode #1749)
+ *  Pattern   : Kadane's Algorithm (dual: max-sum + min-sum)
+ *  File      : 1749_MaxAbsoluteSumOfAnySubarray.cpp
+ * ============================================================================
+ *
+ *  Approach
+ *  --------
+ *  The maximum absolute sum is either:
+ *    • The maximum positive subarray sum (standard Kadane's)
+ *    • The absolute value of the minimum (most negative) subarray sum
+ *
+ *  Run both Kadane variants simultaneously in a single pass.
+ *  Answer = max(abs(maxSum), abs(minSum))
+ *
+ *  Complexity
+ *  ----------
+ *  Time  : O(N)  – single pass
+ *  Space : O(1)  – four scalar variables
+ *
+ *  Evolution Note  (why dual Kadane's instead of brute force?)
+ *  -----------------------------------------------------------
+ *  Checking every subarray sum for the maximum absolute value is O(N²).
+ *  The key insight: |subarray sum| is maximised either at the largest
+ *  positive sum or the most negative sum.  Both can be found in one
+ *  linear scan with four running variables, giving O(N) time O(1) space.
+ *
+ * ============================================================================
+ */
+
 #include <iostream>
 #include <vector>
 #include <algorithm>
 #include <cstdlib>
+#include <cassert>
 
 using namespace std;
+
+// ─── Core Solution ───────────────────────────────────────────────────────────
 
 class Solution {
 public:
     int maxAbsoluteSum(vector<int>& nums) {
         int maxEnding = nums[0];
-        int maxSum = nums[0];
-
+        int maxSum    = nums[0];
         int minEnding = nums[0];
-        int minSum = nums[0];
+        int minSum    = nums[0];
 
-        for(int i = 1; i < nums.size(); i++) {
-
+        for(int i = 1; i < (int)nums.size(); i++) {
             maxEnding = max(nums[i], maxEnding + nums[i]);
-            maxSum = max(maxSum, maxEnding);
+            maxSum    = max(maxSum, maxEnding);
 
             minEnding = min(nums[i], minEnding + nums[i]);
-            minSum = min(minSum, minEnding);
+            minSum    = min(minSum, minEnding);
         }
 
         return max(abs(maxSum), abs(minSum));
-
     }
 };
+
+// ─── Test Harness ────────────────────────────────────────────────────────────
 
 void run_test(int test_num, vector<int> nums, int expected) {
     Solution sol;
     int result = sol.maxAbsoluteSum(nums);
+
+    assert(result == expected);
+
     cout << "[";
     if (result == expected) cout << "PASS";
     else cout << "FAIL";
     cout << "] Test " << test_num << " | ";
 
     cout << "[";
-    for(int i=0; i < min((int)nums.size(), 5); ++i) {
+    for(int i = 0; i < min((int)nums.size(), 5); ++i) {
         cout << nums[i] << (i == min((int)nums.size(), 5)-1 ? "" : ",");
     }
     if (nums.size() > 5) cout << ",...";
