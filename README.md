@@ -103,11 +103,11 @@ Files follow the convention: `<LC#>_<ProblemName>_<Approach>.cpp`
 | Fast & Slow Pointers | 202 | Happy Number | 🟢 Easy | Floyd's on digit-sum sequence | ✅ Done |
 | Prefix Sum | 724 | Find Pivot Index | 🟢 Easy | Original | ✅ Done |
 | Kadane's Algorithm | 53 | Maximum Subarray | 🟡 Medium | Original | ✅ Done |
-| Kadane's Algorithm | 152 | Maximum Product Subarray | 🟡 Medium | Original | ✅ Done |
+| Kadane's Algorithm | 152 | Maximum Product Subarray | 🟡 Medium | Dual-tracking max & min | ✅ Done |
 | Kadane's Algorithm | 918  | Maximum Sum Circular Subarray | 🟡 Medium | Kadane's with wrap-around | ✅ Done |
 | Kadane's Algorithm | 1186 | Maximum Subarray Sum with One Deletion | 🟡 Medium | Two-state DP | ✅ Done |
 | Kadane's Algorithm | 1749 | Maximum Absolute Sum of Any Subarray | 🟡 Medium | Dual Kadane's | ✅ Done |
-| Kadane's Algorithm | GFG | Smallest sum contiguous subarray | 🟡 Medium | Original | ✅ Done |
+| Kadane's Algorithm | GFG | Smallest sum contiguous subarray | 🟢 Easy | Minimum variant | ✅ Done |
 
 ---
 
