@@ -2,7 +2,7 @@
 
 ## When to Use
 
-Use **Prefix Sum** when you need to answer **range sum queries** or find **equilibrium points** (pivot indices) in an array. The key insight is precomputing cumulative sums so that any subarray sum can be computed in O(1) time.
+Use **Prefix Sum** when you need to answer **range sum queries**, find **equilibrium points**, or **count subarrays** with a target sum. The key insight is precomputing cumulative sums so that any subarray sum can be computed in O(1) time — and pairing it with a hash map enables counting exact-sum subarrays in O(N).
 
 ## Core Idea
 
@@ -18,20 +18,22 @@ If `leftSum == totalSum - nums[i] - leftSum`, then `i` is the pivot.
 
 ## Common Keywords to Look For
 
-| Keyword / Phrase                 | Why It Signals Prefix Sum                |
-| -------------------------------- | ---------------------------------------- |
-| **"pivot index"**                | Equilibrium point: left sum == right sum |
-| **"range sum query"**            | Multiple subarray sum queries            |
-| **"contiguous subarray sum"**    | Cumulative sum check                     |
+| Keyword / Phrase                 | Why It Signals Prefix Sum                         |
+| -------------------------------- | ------------------------------------------------- |
+| **"pivot index"**                | Equilibrium point: left sum == right sum          |
+| **"range sum query"**            | Multiple subarray sum queries                     |
+| **"contiguous subarray sum"**    | Cumulative sum check                              |
+| **"number of subarrays = k"**    | Prefix sum + hash map to count exact-sum subarrays |
 
 ---
 
 ## Complexity Cheat Sheet
 
-| Variant               | Time  | Space |
-| --------------------- | ----- | ----- |
-| Basic Prefix Sum      | O(N)  | O(N)  |
-| Optimized (running)   | O(N)  | O(1)  |
+| Variant                       | Time  | Space |
+| ----------------------------- | ----- | ----- |
+| Basic Prefix Sum              | O(N)  | O(N)  |
+| Optimized (running)           | O(N)  | O(1)  |
+| Prefix Sum + Hash Map (count) | O(N)  | O(N)  |
 
 ---
 
@@ -39,6 +41,7 @@ If `leftSum == totalSum - nums[i] - leftSum`, then `i` is the pivot.
 
 | LC # | Problem Name                       | Difficulty | File |
 | ---- | ---------------------------------- | ---------- | ---- |
+| 560  | Subarray Sum Equals K              | 🟡 Medium  | [560_SubarraySumEqualsK.cpp](./560_SubarraySumEqualsK.cpp) |
 | 724  | Find Pivot Index                   | 🟢 Easy    | [724_FindPivotIndex.cpp](./724_FindPivotIndex.cpp) |
 
 ---
@@ -52,10 +55,25 @@ g++ -std=c++17 -o solution <file.cpp> && ./solution
 
 | Problem | Command |
 |---------|---------|
+| LC 560 | `g++ -std=c++17 -o solution 560_SubarraySumEqualsK.cpp && ./solution` |
 | LC 724 | `g++ -std=c++17 -o solution 724_FindPivotIndex.cpp && ./solution` |
 
 <details>
 <summary>Expected output for all problems</summary>
+
+**LC 560**
+```
+[PASS] Test 1 | k=2 | [1,1,1] -> count = 2
+[PASS] Test 2 | k=3 | [1,2,3] -> count = 2
+[PASS] Test 3 | k=1 | [1] -> count = 1
+[PASS] Test 4 | k=0 | [-1,-1,1] -> count = 1
+[PASS] Test 5 | k=7 | [3,4,7,2,-3,...] -> count = 4
+[PASS] Test 6 | k=0 | [1] -> count = 0
+[PASS] Test 7 | k=0 | [0,0,0,0] -> count = 10
+[PASS] Test 8 | k=4 | [-1,2,3,-1,...] -> count = 3
+
+✅  All tests executed.
+```
 
 **LC 724**
 ```
