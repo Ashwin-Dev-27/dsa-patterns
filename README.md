@@ -2,8 +2,8 @@
 
 ![Language](https://img.shields.io/badge/Language-C++-00599C?logo=cplusplus&logoColor=white)
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen)
-![Problems Solved](https://img.shields.io/badge/Problems%20Solved-25-blue)
-![Patterns Covered](https://img.shields.io/badge/Patterns%20Covered-4-blueviolet)
+![Problems Solved](https://img.shields.io/badge/Problems%20Solved-26-blue)
+![Patterns Covered](https://img.shields.io/badge/Patterns%20Covered-5-blueviolet)
 ![License](https://img.shields.io/badge/License-MIT-green)
 ![Visitors](https://api.visitorbadge.io/api/visitors?path=Ashwin-Dev-27.dsa-patterns&countColor=%2300599C)
 
@@ -46,6 +46,9 @@ dsa/
 │   ├── 202_HappyNumber.cpp
 │   ├── 287_FindDuplicateNumber.cpp
 │   └── 876_MiddleOfLinkedList.cpp
+├── 08_Prefix_Sum/
+│   ├── README.md                        ← Pattern cheat sheet
+│   └── 724_FindPivotIndex.cpp
 ├── 17_Kadanes_Algorithm/
 │   ├── README.md                        ← Pattern cheat sheet
 │   ├── 152_MaximumProductSubarray.cpp
@@ -70,6 +73,7 @@ Files follow the convention: `<LC#>_<ProblemName>_<Approach>.cpp`
 | 02 | Two Pointers | [`02_Two_Pointers/`](./02_Two_Pointers/) | 7 |
 | 03 | Sliding Window | [`03_Sliding_Window/`](./03_Sliding_Window/) | 7 |
 | 04 | Fast & Slow Pointers | [`04_Fast_Slow_Pointers/`](./04_Fast_Slow_Pointers/) | 5 |
+| 08 | Prefix Sum | [`08_Prefix_Sum/`](./08_Prefix_Sum/) | 1 |
 | 17 | Kadane's Algorithm | [`17_Kadanes_Algorithm/`](./17_Kadanes_Algorithm/) | 6 |
 
 ---
@@ -97,6 +101,7 @@ Files follow the convention: `<LC#>_<ProblemName>_<Approach>.cpp`
 | Fast & Slow Pointers | 876 | Middle of the Linked List | 🟢 Easy | Fast reaches end | ✅ Done |
 | Fast & Slow Pointers | 287 | Find the Duplicate Number | 🟡 Medium | Array-as-list + Floyd's | ✅ Done |
 | Fast & Slow Pointers | 202 | Happy Number | 🟢 Easy | Floyd's on digit-sum sequence | ✅ Done |
+| Prefix Sum | 724 | Find Pivot Index | 🟢 Easy | Original | ✅ Done |
 | Kadane's Algorithm | 53 | Maximum Subarray | 🟡 Medium | Original | ✅ Done |
 | Kadane's Algorithm | 152 | Maximum Product Subarray | 🟡 Medium | Original | ✅ Done |
 | Kadane's Algorithm | 918  | Maximum Sum Circular Subarray | 🟡 Medium | Kadane's with wrap-around | ✅ Done |
@@ -137,16 +142,17 @@ Or use the helper script (Windows PowerShell):
 - [ ] 05 — Binary Search
 - [x] **06 — Fast & Slow Pointers (Linked List)**
 - [ ] 07 — Trees
-- [ ] 08 — Tries
-- [ ] 09 — Heap / Priority Queue
-- [ ] 10 — Backtracking
-- [ ] 11 — Graphs
-- [ ] 12 — Dynamic Programming
-- [ ] 13 — Greedy
-- [ ] 14 — Intervals
-- [ ] 15 — Math & Geometry
-- [ ] 16 — Bit Manipulation
-- [x] **17 — Kadane's Algorithm**
+- [x] **08 — Prefix Sum**
+- [ ] 09 — Tries
+- [ ] 10 — Heap / Priority Queue
+- [ ] 11 — Backtracking
+- [ ] 12 — Graphs
+- [ ] 13 — Dynamic Programming
+- [ ] 14 — Greedy
+- [ ] 15 — Intervals
+- [ ] 16 — Math & Geometry
+- [ ] 17 — Bit Manipulation
+- [x] **18 — Kadane's Algorithm**
 
 ---
 
