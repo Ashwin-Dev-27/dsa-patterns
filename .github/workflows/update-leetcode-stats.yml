@@ -1,0 +1,38 @@
+name: 📊 Sync LeetCode Stats
+
+on:
+  push:
+    branches: [master]
+  schedule:
+    - cron: "30 2 * * *"   # Daily at 2:30 AM UTC  (8:00 AM IST)
+  workflow_dispatch:         # Manual trigger from GitHub Actions tab
+
+jobs:
+  update-stats:
+    name: Fetch & Update LeetCode Stats
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write        # Needed to push the README update
+
+    steps:
+      - name: ⬇️ Checkout repo
+        uses: actions/checkout@v4
+
+      - name: 🐍 Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: 📦 Install dependencies
+        run: pip install requests
+
+      - name: 🔄 Fetch LeetCode stats & update README
+        run: python .github/scripts/update_leetcode_stats.py
+
+      - name: 💾 Commit updated README
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: sync LeetCode stats [skip ci]"
+          file_pattern: README.md
+          commit_author: "github-actions[bot] <github-actions[bot]@users.noreply.github.com>"

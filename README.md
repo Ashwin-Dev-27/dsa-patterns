@@ -17,6 +17,24 @@ Every solution is:
 
 ---
 
+<!-- LEETCODE-STATS:START -->
+## 🏆 LeetCode Progress
+
+> 🔄 Auto-synced on every push &nbsp;|&nbsp; [View Profile ↗](https://leetcode.com/u/Ashwin_Dev_27/)
+
+| Metric | Value |
+|:---|:---|
+| 🌐 **Global Rank** | — |
+| ✅ **Total Solved** | — |
+| 🟢 Easy | — |
+| 🟡 Medium | — |
+| 🔴 Hard | — |
+
+<sub>🕐 Last synced: —</sub>
+<!-- LEETCODE-STATS:END -->
+
+---
+
 ## 📂 Repository Structure
 
 ```
