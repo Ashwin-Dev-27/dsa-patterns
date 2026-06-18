@@ -24,6 +24,7 @@ If `leftSum == totalSum - nums[i] - leftSum`, then `i` is the pivot.
 | **"range sum query"**            | Multiple subarray sum queries                     |
 | **"contiguous subarray sum"**    | Cumulative sum check                              |
 | **"number of subarrays = k"**    | Prefix sum + hash map to count exact-sum subarrays |
+| **"equal number of 0s and 1s"**  | Treat 0 as -1 and 1 as 1, find subarray sum = 0    |
 
 ---
 
@@ -41,6 +42,7 @@ If `leftSum == totalSum - nums[i] - leftSum`, then `i` is the pivot.
 
 | LC # | Problem Name                       | Difficulty | File |
 | ---- | ---------------------------------- | ---------- | ---- |
+| 525  | Contiguous Array                   | 🟡 Medium  | [525_ContiguousArray.cpp](./525_ContiguousArray.cpp) |
 | 560  | Subarray Sum Equals K              | 🟡 Medium  | [560_SubarraySumEqualsK.cpp](./560_SubarraySumEqualsK.cpp) |
 | 724  | Find Pivot Index                   | 🟢 Easy    | [724_FindPivotIndex.cpp](./724_FindPivotIndex.cpp) |
 | 974  | Subarray Sums Divisible by K       | 🟡 Medium  | [974_SubarraysDivisibleByK.cpp](./974_SubarraysDivisibleByK.cpp) |
@@ -56,12 +58,27 @@ g++ -std=c++17 -o solution <file.cpp> && ./solution
 
 | Problem | Command |
 |---------|---------|
+| LC 525 | `g++ -std=c++17 -o solution 525_ContiguousArray.cpp && ./solution` |
 | LC 560 | `g++ -std=c++17 -o solution 560_SubarraySumEqualsK.cpp && ./solution` |
 | LC 724 | `g++ -std=c++17 -o solution 724_FindPivotIndex.cpp && ./solution` |
 | LC 974 | `g++ -std=c++17 -o solution 974_SubarraysDivisibleByK.cpp && ./solution` |
 
 <details>
 <summary>Expected output for all problems</summary>
+
+**LC 525**
+```
+[PASS] Test 1 | [0,1] -> max length = 2
+[PASS] Test 2 | [0,1,0] -> max length = 2
+[PASS] Test 3 | [0,0,0,1,1,...] -> max length = 6
+[PASS] Test 4 | [0,0,1,0,0,...] -> max length = 6
+[PASS] Test 5 | [0,0,0] -> max length = 0
+[PASS] Test 6 | [1,1,1] -> max length = 0
+[PASS] Test 7 | [0,1,1,0,1,...] -> max length = 4
+[PASS] Test 8 | [1] -> max length = 0
+
+✅  All tests executed.
+```
 
 **LC 560**
 ```
