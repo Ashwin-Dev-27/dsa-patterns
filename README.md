@@ -2,7 +2,7 @@
 
 ![Language](https://img.shields.io/badge/Language-C++-00599C?logo=cplusplus&logoColor=white)
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen)
-![Problems Solved](https://img.shields.io/badge/Problems%20Solved-27-blue)
+![Problems Solved](https://img.shields.io/badge/Problems%20Solved-28-blue)
 ![Patterns Covered](https://img.shields.io/badge/Patterns%20Covered-5-blueviolet)
 ![License](https://img.shields.io/badge/License-MIT-green)
 ![Visitors](https://api.visitorbadge.io/api/visitors?path=Ashwin-Dev-27.dsa-patterns&countColor=%2300599C)
@@ -49,7 +49,8 @@ dsa/
 ├── 08_Prefix_Sum/
 │   ├── README.md                        ← Pattern cheat sheet
 │   ├── 560_SubarraySumEqualsK.cpp
-│   └── 724_FindPivotIndex.cpp
+│   ├── 724_FindPivotIndex.cpp
+│   └── 974_SubarraysDivisibleByK.cpp
 ├── 17_Kadanes_Algorithm/
 │   ├── README.md                        ← Pattern cheat sheet
 │   ├── 152_MaximumProductSubarray.cpp
@@ -74,7 +75,7 @@ Files follow the convention: `<LC#>_<ProblemName>_<Approach>.cpp`
 | 02 | Two Pointers | [`02_Two_Pointers/`](./02_Two_Pointers/) | 7 |
 | 03 | Sliding Window | [`03_Sliding_Window/`](./03_Sliding_Window/) | 7 |
 | 04 | Fast & Slow Pointers | [`04_Fast_Slow_Pointers/`](./04_Fast_Slow_Pointers/) | 5 |
-| 08 | Prefix Sum | [`08_Prefix_Sum/`](./08_Prefix_Sum/) | 2 |
+| 08 | Prefix Sum | [`08_Prefix_Sum/`](./08_Prefix_Sum/) | 3 |
 | 17 | Kadane's Algorithm | [`17_Kadanes_Algorithm/`](./17_Kadanes_Algorithm/) | 6 |
 
 ---
@@ -104,6 +105,7 @@ Files follow the convention: `<LC#>_<ProblemName>_<Approach>.cpp`
 | Fast & Slow Pointers | 202 | Happy Number | 🟢 Easy | Floyd's on digit-sum sequence | ✅ Done |
 | Prefix Sum | 560 | Subarray Sum Equals K | 🟡 Medium | Prefix Sum + Hash Map | ✅ Done |
 | Prefix Sum | 724 | Find Pivot Index | 🟢 Easy | Original | ✅ Done |
+| Prefix Sum | 974 | Subarray Sums Divisible by K | 🟡 Medium | Remainder Frequency Map | ✅ Done |
 | Kadane's Algorithm | 53 | Maximum Subarray | 🟡 Medium | Original | ✅ Done |
 | Kadane's Algorithm | 152 | Maximum Product Subarray | 🟡 Medium | Dual-tracking max & min | ✅ Done |
 | Kadane's Algorithm | 918  | Maximum Sum Circular Subarray | 🟡 Medium | Kadane's with wrap-around | ✅ Done |

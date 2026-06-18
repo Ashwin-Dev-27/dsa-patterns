@@ -43,6 +43,7 @@ If `leftSum == totalSum - nums[i] - leftSum`, then `i` is the pivot.
 | ---- | ---------------------------------- | ---------- | ---- |
 | 560  | Subarray Sum Equals K              | 🟡 Medium  | [560_SubarraySumEqualsK.cpp](./560_SubarraySumEqualsK.cpp) |
 | 724  | Find Pivot Index                   | 🟢 Easy    | [724_FindPivotIndex.cpp](./724_FindPivotIndex.cpp) |
+| 974  | Subarray Sums Divisible by K       | 🟡 Medium  | [974_SubarraysDivisibleByK.cpp](./974_SubarraysDivisibleByK.cpp) |
 
 ---
 
@@ -57,6 +58,7 @@ g++ -std=c++17 -o solution <file.cpp> && ./solution
 |---------|---------|
 | LC 560 | `g++ -std=c++17 -o solution 560_SubarraySumEqualsK.cpp && ./solution` |
 | LC 724 | `g++ -std=c++17 -o solution 724_FindPivotIndex.cpp && ./solution` |
+| LC 974 | `g++ -std=c++17 -o solution 974_SubarraysDivisibleByK.cpp && ./solution` |
 
 <details>
 <summary>Expected output for all problems</summary>
@@ -85,6 +87,20 @@ g++ -std=c++17 -o solution <file.cpp> && ./solution
 [PASS] Test 6 | [] -> pivot = -1
 [PASS] Test 7 | [-1,-1,-1,...] -> pivot = 2
 [PASS] Test 8 | [-7,1,5,2,-4,...] -> pivot = 3
+
+✅  All tests executed.
+```
+
+**LC 974**
+```
+[PASS] Test 1 | k=5 | [4,5,0,-2,-3,...] -> count = 7
+[PASS] Test 2 | k=9 | [5] -> count = 0
+[PASS] Test 3 | k=5 | [5] -> count = 1
+[PASS] Test 4 | k=2 | [0,0,0] -> count = 6
+[PASS] Test 5 | k=2 | [-1,2,9] -> count = 2
+[PASS] Test 6 | k=3 | [7,3,-3] -> count = 3
+[PASS] Test 7 | k=2 | [2,2,2,2] -> count = 10
+[PASS] Test 8 | k=5 | [1,2,3,4,5] -> count = 4
 
 ✅  All tests executed.
 ```
