@@ -25,12 +25,12 @@ Every solution is:
 | Metric | Value |
 |:---|:---|
 | 🌐 **Global Rank** | #3,796,237 |
-| ✅ **Total Solved** | **26** / 3973 &nbsp;`0.7%` |
+| ✅ **Total Solved** | **27** / 3973 &nbsp;`0.7%` |
 | 🟢 Easy | 6 / 951 &nbsp; `░░░░░░░░░░` |
-| 🟡 Medium | 19 / 2074 &nbsp; `░░░░░░░░░░` |
+| 🟡 Medium | 20 / 2074 &nbsp; `░░░░░░░░░░` |
 | 🔴 Hard | 1 / 948 &nbsp; `░░░░░░░░░░` |
 
-<sub>🕐 Last synced: 25 Jun 2026 · 05:48 UTC</sub>
+<sub>🕐 Last synced: 25 Jun 2026 · 06:11 UTC</sub>
 <!-- LEETCODE-STATS:END -->
 
 ---
