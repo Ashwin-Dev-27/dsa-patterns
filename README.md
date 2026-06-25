@@ -2,8 +2,8 @@
 
 ![Language](https://img.shields.io/badge/Language-C++-00599C?logo=cplusplus&logoColor=white)
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen)
-![Problems Solved](https://img.shields.io/badge/Problems%20Solved-29-blue)
-![Patterns Covered](https://img.shields.io/badge/Patterns%20Covered-5-blueviolet)
+![Problems Solved](https://img.shields.io/badge/Problems%20Solved-30-blue)
+![Patterns Covered](https://img.shields.io/badge/Patterns%20Covered-6-blueviolet)
 ![License](https://img.shields.io/badge/License-MIT-green)
 ![Visitors](https://api.visitorbadge.io/api/visitors?path=Ashwin-Dev-27.dsa-patterns&countColor=%2300599C)
 
@@ -70,6 +70,9 @@ dsa/
 │   ├── 560_SubarraySumEqualsK.cpp
 │   ├── 724_FindPivotIndex.cpp
 │   └── 974_SubarraysDivisibleByK.cpp
+├── 15_Merge_Intervals/
+│   ├── README.md                        ← Pattern cheat sheet
+│   └── 56_MergeIntervals.cpp
 ├── 17_Kadanes_Algorithm/
 │   ├── README.md                        ← Pattern cheat sheet
 │   ├── 152_MaximumProductSubarray.cpp
@@ -95,6 +98,7 @@ Files follow the convention: `<LC#>_<ProblemName>_<Approach>.cpp`
 | 03 | Sliding Window | [`03_Sliding_Window/`](./03_Sliding_Window/) | 7 |
 | 04 | Fast & Slow Pointers | [`04_Fast_Slow_Pointers/`](./04_Fast_Slow_Pointers/) | 5 |
 | 08 | Prefix Sum | [`08_Prefix_Sum/`](./08_Prefix_Sum/) | 4 |
+| 15 | Merge Intervals | [`15_Merge_Intervals/`](./15_Merge_Intervals/) | 1 |
 | 17 | Kadane's Algorithm | [`17_Kadanes_Algorithm/`](./17_Kadanes_Algorithm/) | 6 |
 
 ---
@@ -132,6 +136,7 @@ Files follow the convention: `<LC#>_<ProblemName>_<Approach>.cpp`
 | Kadane's Algorithm | 1186 | Maximum Subarray Sum with One Deletion | 🟡 Medium | Two-state DP | ✅ Done |
 | Kadane's Algorithm | 1749 | Maximum Absolute Sum of Any Subarray | 🟡 Medium | Dual Kadane's | ✅ Done |
 | Kadane's Algorithm | GFG | Smallest sum contiguous subarray | 🟢 Easy | Minimum variant | ✅ Done |
+| Merge Intervals | 56 | Merge Intervals | 🟡 Medium | Sort + greedy scan | ✅ Done |
 
 ---
 
@@ -173,7 +178,7 @@ Or use the helper script (Windows PowerShell):
 - [ ] 12 — Graphs
 - [ ] 13 — Dynamic Programming
 - [ ] 14 — Greedy
-- [ ] 15 — Intervals
+- [x] **15 — Merge Intervals**
 - [ ] 16 — Math & Geometry
 - [ ] 17 — Bit Manipulation
 - [x] **18 — Kadane's Algorithm**
