@@ -48,6 +48,7 @@ Push the last current.
 | 56   | Merge Intervals               | 🟡 Medium  | [56_MergeIntervals.cpp](./56_MergeIntervals.cpp) |
 | 57   | Insert Interval               | 🟡 Medium  | [57_InsertInterval.cpp](./57_InsertInterval.cpp) |
 | 986  | Interval List Intersections   | 🟡 Medium  | [986_IntervalListIntersections.cpp](./986_IntervalListIntersections.cpp) |
+| GFG  | Check if Any Two Intervals Overlap | 🟡 Medium | [CheckIfIntervalsOverlap_GFG.cpp](./CheckIfIntervalsOverlap_GFG.cpp) |
 
 ---
 
@@ -63,6 +64,7 @@ g++ -std=c++17 -o solution <file.cpp> && ./solution
 | LC 56  | `g++ -std=c++17 -o solution 56_MergeIntervals.cpp && ./solution` |
 | LC 57  | `g++ -std=c++17 -o solution 57_InsertInterval.cpp && ./solution` |
 | LC 986 | `g++ -std=c++17 -o solution 986_IntervalListIntersections.cpp && ./solution` |
+| GFG    | `g++ -std=c++17 -o solution CheckIfIntervalsOverlap_GFG.cpp && ./solution` |
 
 <details>
 <summary>Expected output for all problems</summary>
@@ -105,6 +107,20 @@ g++ -std=c++17 -o solution <file.cpp> && ./solution
 [PASS] Test 6 | first fully contains second
 [PASS] Test 7 | identical intervals
 [PASS] Test 8 | interleaving intervals
+
+✅  All tests executed.
+```
+
+**GFG — Check if Any Two Intervals Overlap**
+```
+[PASS] Test 1 | classic overlap [1,3] & [2,4] -> true
+[PASS] Test 2 | completely disjoint intervals -> false
+[PASS] Test 3 | boundary touch end==start counts as overlap -> true
+[PASS] Test 4 | single interval -> no overlap possible -> false
+[PASS] Test 5 | first fully contains second -> true
+[PASS] Test 6 | unsorted input with overlap after sort -> true
+[PASS] Test 7 | multiple wide-gap disjoint intervals -> false
+[PASS] Test 8 | overlap only between later intervals -> true
 
 ✅  All tests executed.
 ```
