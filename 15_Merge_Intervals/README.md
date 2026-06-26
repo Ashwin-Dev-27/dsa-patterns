@@ -49,6 +49,7 @@ Push the last current.
 | 57   | Insert Interval               | 🟡 Medium  | [57_InsertInterval.cpp](./57_InsertInterval.cpp) |
 | 986  | Interval List Intersections   | 🟡 Medium  | [986_IntervalListIntersections.cpp](./986_IntervalListIntersections.cpp) |
 | GFG  | Check if Any Two Intervals Overlap | 🟡 Medium | [CheckIfIntervalsOverlap_GFG.cpp](./CheckIfIntervalsOverlap_GFG.cpp) |
+| GFG  | Minimum Meeting Rooms         | 🟡 Medium  | [MinMeetingRooms_GFG.cpp](./MinMeetingRooms_GFG.cpp) |
 
 ---
 
@@ -64,7 +65,8 @@ g++ -std=c++17 -o solution <file.cpp> && ./solution
 | LC 56  | `g++ -std=c++17 -o solution 56_MergeIntervals.cpp && ./solution` |
 | LC 57  | `g++ -std=c++17 -o solution 57_InsertInterval.cpp && ./solution` |
 | LC 986 | `g++ -std=c++17 -o solution 986_IntervalListIntersections.cpp && ./solution` |
-| GFG    | `g++ -std=c++17 -o solution CheckIfIntervalsOverlap_GFG.cpp && ./solution` |
+| GFG (overlap) | `g++ -std=c++17 -o solution CheckIfIntervalsOverlap_GFG.cpp && ./solution` |
+| GFG (rooms)   | `g++ -std=c++17 -o solution MinMeetingRooms_GFG.cpp && ./solution` |
 
 <details>
 <summary>Expected output for all problems</summary>
@@ -121,6 +123,20 @@ g++ -std=c++17 -o solution <file.cpp> && ./solution
 [PASS] Test 6 | unsorted input with overlap after sort -> true
 [PASS] Test 7 | multiple wide-gap disjoint intervals -> false
 [PASS] Test 8 | overlap only between later intervals -> true
+
+✅  All tests executed.
+```
+
+**GFG — Minimum Meeting Rooms**
+```
+[PASS] Test 1 | two overlapping + one sequential -> 2
+[PASS] Test 2 | all sequential meetings -> 1 room -> 1
+[PASS] Test 3 | all simultaneous -> 3 rooms -> 3
+[PASS] Test 4 | single meeting -> 1 room -> 1
+[PASS] Test 5 | start[i]==end[j] -> room freed, 1 room needed -> 1
+[PASS] Test 6 | cascading overlaps -> 4 rooms -> 4
+[PASS] Test 7 | no overlaps sorted input -> 1 room -> 1
+[PASS] Test 8 | peak of 3 simultaneous meetings -> 3
 
 ✅  All tests executed.
 ```
