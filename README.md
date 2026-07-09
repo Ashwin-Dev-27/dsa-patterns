@@ -2,7 +2,7 @@
 
 ![Language](https://img.shields.io/badge/Language-C++-00599C?logo=cplusplus&logoColor=white)
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen)
-![Problems Solved](https://img.shields.io/badge/Problems%20Solved-35-blue)
+![Problems Solved](https://img.shields.io/badge/Problems%20Solved-36-blue)
 ![Patterns Covered](https://img.shields.io/badge/Patterns%20Covered-7-blueviolet)
 ![License](https://img.shields.io/badge/License-MIT-green)
 ![Visitors](https://api.visitorbadge.io/api/visitors?path=Ashwin-Dev-27.dsa-patterns&countColor=%2300599C)
@@ -66,7 +66,8 @@ dsa/
 │   └── 876_MiddleOfLinkedList.cpp
 ├── 06_Stack/
 │   ├── README.md                        ← Pattern cheat sheet
-│   └── 1047_RemoveDuplicates.cpp
+│   ├── 1047_RemoveDuplicates.cpp
+│   └── 20_ValidParentheses.cpp
 ├── 08_Prefix_Sum/
 │   ├── README.md                        ← Pattern cheat sheet
 │   ├── 525_ContiguousArray.cpp
@@ -103,7 +104,7 @@ Files follow the convention: `<LC#>_<ProblemName>_<Approach>.cpp`
 |---|---------|--------|-----------------|
 | 02 | Two Pointers | [`02_Two_Pointers/`](./02_Two_Pointers/) | 7 |
 | 03 | Sliding Window | [`03_Sliding_Window/`](./03_Sliding_Window/) | 7 |
-| 06 | Stack | [`06_Stack/`](./06_Stack/) | 1 |
+| 06 | Stack | [`06_Stack/`](./06_Stack/) | 2 |
 | 04 | Fast & Slow Pointers | [`04_Fast_Slow_Pointers/`](./04_Fast_Slow_Pointers/) | 5 |
 | 08 | Prefix Sum | [`08_Prefix_Sum/`](./08_Prefix_Sum/) | 4 |
 | 15 | Merge Intervals | [`15_Merge_Intervals/`](./15_Merge_Intervals/) | 5 |
@@ -150,6 +151,7 @@ Files follow the convention: `<LC#>_<ProblemName>_<Approach>.cpp`
 | Merge Intervals | GFG | Check if Any Two Intervals Overlap | 🟡 Medium | Sort + adjacent scan | ✅ Done |
 | Merge Intervals | GFG | Minimum Meeting Rooms | 🟡 Medium | Sort starts & ends + sweep | ✅ Done |
 | Stack | 1047 | Remove All Adjacent Duplicates In String | 🟢 Easy | Push/pop pairs | ✅ Done |
+| Stack | 20 | Valid Parentheses | 🟢 Easy | Stack match open/close | ✅ Done |
 
 ---
 

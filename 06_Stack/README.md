@@ -1,4 +1,4 @@
-# 📚 Pattern 04 — Stack
+# 📚 Pattern 06 — Stack
 
 ## 🧠 Core Idea
 A **stack** is a LIFO (Last In, First Out) data structure. In DSA, it's the go-to tool whenever you need to:
@@ -73,6 +73,7 @@ for (int i = 0; i < n; i++) {
 | LC #  | Problem | Difficulty | File | Approach |
 |-------|---------|------------|------|----------|
 | 1047  | Remove All Adjacent Duplicates In String | 🟢 Easy | [1047_RemoveDuplicates.cpp](./1047_RemoveDuplicates.cpp) | Push/pop pairs |
+| 20    | Valid Parentheses | 🟢 Easy | [20_ValidParentheses.cpp](./20_ValidParentheses.cpp) | Stack match open/close |
 
 ---
 
@@ -80,10 +81,12 @@ for (int i = 0; i < n; i++) {
 
 ```bash
 # Compile & run (from repo root)
-g++ -std=c++17 -o out 04_Stack/1047_RemoveDuplicates.cpp && ./out
+g++ -std=c++17 -o out 06_Stack/1047_RemoveDuplicates.cpp && ./out
+g++ -std=c++17 -o out 06_Stack/20_ValidParentheses.cpp && ./out
 
 # Or via PowerShell helper
-.\run.ps1 04_Stack/1047_RemoveDuplicates.cpp
+.\run.ps1 06_Stack/1047_RemoveDuplicates.cpp
+.\run.ps1 06_Stack/20_ValidParentheses.cpp
 ```
 
 ### Expected Output
