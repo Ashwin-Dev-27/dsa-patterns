@@ -64,7 +64,7 @@ dsa/
 │   ├── 202_HappyNumber.cpp
 │   ├── 287_FindDuplicateNumber.cpp
 │   └── 876_MiddleOfLinkedList.cpp
-├── 04_Stack/
+├── 06_Stack/
 │   ├── README.md                        ← Pattern cheat sheet
 │   └── 1047_RemoveDuplicates.cpp
 ├── 08_Prefix_Sum/
@@ -103,7 +103,7 @@ Files follow the convention: `<LC#>_<ProblemName>_<Approach>.cpp`
 |---|---------|--------|-----------------|
 | 02 | Two Pointers | [`02_Two_Pointers/`](./02_Two_Pointers/) | 7 |
 | 03 | Sliding Window | [`03_Sliding_Window/`](./03_Sliding_Window/) | 7 |
-| 04 | Stack | [`04_Stack/`](./04_Stack/) | 1 |
+| 06 | Stack | [`06_Stack/`](./06_Stack/) | 1 |
 | 04 | Fast & Slow Pointers | [`04_Fast_Slow_Pointers/`](./04_Fast_Slow_Pointers/) | 5 |
 | 08 | Prefix Sum | [`08_Prefix_Sum/`](./08_Prefix_Sum/) | 4 |
 | 15 | Merge Intervals | [`15_Merge_Intervals/`](./15_Merge_Intervals/) | 5 |
@@ -180,7 +180,7 @@ Or use the helper script (Windows PowerShell):
 - [ ] 01 — Arrays & Hashing
 - [x] **02 — Two Pointers**
 - [x] **03 — Sliding Window**
-- [x] **04 — Stack**
+- [x] **06 — Stack**
 - [ ] 05 — Binary Search
 - [x] **06 — Fast & Slow Pointers (Linked List)**
 - [ ] 07 — Trees
