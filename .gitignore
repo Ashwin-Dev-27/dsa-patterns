@@ -21,3 +21,6 @@ cmake-build-*/
 
 # Internal session log (local only, not for repo)
 dsa_session_log.md
+
+# Excel sheets
+*.xlsx
