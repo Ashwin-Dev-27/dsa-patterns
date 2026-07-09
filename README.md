@@ -2,8 +2,8 @@
 
 ![Language](https://img.shields.io/badge/Language-C++-00599C?logo=cplusplus&logoColor=white)
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen)
-![Problems Solved](https://img.shields.io/badge/Problems%20Solved-34-blue)
-![Patterns Covered](https://img.shields.io/badge/Patterns%20Covered-6-blueviolet)
+![Problems Solved](https://img.shields.io/badge/Problems%20Solved-35-blue)
+![Patterns Covered](https://img.shields.io/badge/Patterns%20Covered-7-blueviolet)
 ![License](https://img.shields.io/badge/License-MIT-green)
 ![Visitors](https://api.visitorbadge.io/api/visitors?path=Ashwin-Dev-27.dsa-patterns&countColor=%2300599C)
 
@@ -64,6 +64,9 @@ dsa/
 │   ├── 202_HappyNumber.cpp
 │   ├── 287_FindDuplicateNumber.cpp
 │   └── 876_MiddleOfLinkedList.cpp
+├── 04_Stack/
+│   ├── README.md                        ← Pattern cheat sheet
+│   └── 1047_RemoveDuplicates.cpp
 ├── 08_Prefix_Sum/
 │   ├── README.md                        ← Pattern cheat sheet
 │   ├── 525_ContiguousArray.cpp
@@ -100,6 +103,7 @@ Files follow the convention: `<LC#>_<ProblemName>_<Approach>.cpp`
 |---|---------|--------|-----------------|
 | 02 | Two Pointers | [`02_Two_Pointers/`](./02_Two_Pointers/) | 7 |
 | 03 | Sliding Window | [`03_Sliding_Window/`](./03_Sliding_Window/) | 7 |
+| 04 | Stack | [`04_Stack/`](./04_Stack/) | 1 |
 | 04 | Fast & Slow Pointers | [`04_Fast_Slow_Pointers/`](./04_Fast_Slow_Pointers/) | 5 |
 | 08 | Prefix Sum | [`08_Prefix_Sum/`](./08_Prefix_Sum/) | 4 |
 | 15 | Merge Intervals | [`15_Merge_Intervals/`](./15_Merge_Intervals/) | 5 |
@@ -145,6 +149,7 @@ Files follow the convention: `<LC#>_<ProblemName>_<Approach>.cpp`
 | Merge Intervals | 986 | Interval List Intersections | 🟡 Medium | Two-pointer scan | ✅ Done |
 | Merge Intervals | GFG | Check if Any Two Intervals Overlap | 🟡 Medium | Sort + adjacent scan | ✅ Done |
 | Merge Intervals | GFG | Minimum Meeting Rooms | 🟡 Medium | Sort starts & ends + sweep | ✅ Done |
+| Stack | 1047 | Remove All Adjacent Duplicates In String | 🟢 Easy | Push/pop pairs | ✅ Done |
 
 ---
 
@@ -175,7 +180,7 @@ Or use the helper script (Windows PowerShell):
 - [ ] 01 — Arrays & Hashing
 - [x] **02 — Two Pointers**
 - [x] **03 — Sliding Window**
-- [ ] 04 — Stack
+- [x] **04 — Stack**
 - [ ] 05 — Binary Search
 - [x] **06 — Fast & Slow Pointers (Linked List)**
 - [ ] 07 — Trees
