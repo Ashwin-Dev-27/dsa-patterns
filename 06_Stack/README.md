@@ -77,6 +77,7 @@ for (int i = 0; i < n; i++) {
 | 496   | Next Greater Element I | 🟢 Easy | [496_NextGreaterElement.cpp](./496_NextGreaterElement.cpp) | Monotonic stack (right→left) + hash map |
 | 739   | Daily Temperatures | 🟡 Medium | [739_DailyTemperatures.cpp](./739_DailyTemperatures.cpp) | Monotonic stack of indices (right→left) |
 | 503   | Next Greater Element II | 🟡 Medium | [503_NextGreaterElementII.cpp](./503_NextGreaterElementII.cpp) | Monotonic stack + pre-loaded circular wrap |
+| 1209  | Remove All Adjacent Duplicates in String II | 🟡 Medium | [1209_RemoveDuplicatesII.cpp](./1209_RemoveDuplicatesII.cpp) | Stack of (char, count) pairs |
 
 ---
 
@@ -96,6 +97,7 @@ g++ -std=c++17 -o out 06_Stack/503_NextGreaterElementII.cpp && ./out
 .\run.ps1 06_Stack/496_NextGreaterElement.cpp
 .\run.ps1 06_Stack/739_DailyTemperatures.cpp
 .\run.ps1 06_Stack/503_NextGreaterElementII.cpp
+.\run.ps1 06_Stack/1209_RemoveDuplicatesII.cpp
 ```
 
 ### Expected Output
