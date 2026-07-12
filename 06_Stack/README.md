@@ -76,6 +76,7 @@ for (int i = 0; i < n; i++) {
 | 20    | Valid Parentheses | 🟢 Easy | [20_ValidParentheses.cpp](./20_ValidParentheses.cpp) | Stack match open/close |
 | 496   | Next Greater Element I | 🟢 Easy | [496_NextGreaterElement.cpp](./496_NextGreaterElement.cpp) | Monotonic stack (right→left) + hash map |
 | 739   | Daily Temperatures | 🟡 Medium | [739_DailyTemperatures.cpp](./739_DailyTemperatures.cpp) | Monotonic stack of indices (right→left) |
+| 503   | Next Greater Element II | 🟡 Medium | [503_NextGreaterElementII.cpp](./503_NextGreaterElementII.cpp) | Monotonic stack + pre-loaded circular wrap |
 
 ---
 
@@ -87,12 +88,14 @@ g++ -std=c++17 -o out 06_Stack/1047_RemoveDuplicates.cpp && ./out
 g++ -std=c++17 -o out 06_Stack/20_ValidParentheses.cpp && ./out
 g++ -std=c++17 -o out 06_Stack/496_NextGreaterElement.cpp && ./out
 g++ -std=c++17 -o out 06_Stack/739_DailyTemperatures.cpp && ./out
+g++ -std=c++17 -o out 06_Stack/503_NextGreaterElementII.cpp && ./out
 
 # Or via PowerShell helper
 .\run.ps1 06_Stack/1047_RemoveDuplicates.cpp
 .\run.ps1 06_Stack/20_ValidParentheses.cpp
 .\run.ps1 06_Stack/496_NextGreaterElement.cpp
 .\run.ps1 06_Stack/739_DailyTemperatures.cpp
+.\run.ps1 06_Stack/503_NextGreaterElementII.cpp
 ```
 
 ### Expected Output
