@@ -2,8 +2,8 @@
 
 ![Language](https://img.shields.io/badge/Language-C++-00599C?logo=cplusplus&logoColor=white)
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen)
-![Problems Solved](https://img.shields.io/badge/Problems%20Solved-40-blue)
-![Patterns Covered](https://img.shields.io/badge/Patterns%20Covered-7-blueviolet)
+![Problems Solved](https://img.shields.io/badge/Problems%20Solved-41-blue)
+![Patterns Covered](https://img.shields.io/badge/Patterns%20Covered-8-blueviolet)
 ![License](https://img.shields.io/badge/License-MIT-green)
 ![Visitors](https://api.visitorbadge.io/api/visitors?path=Ashwin-Dev-27.dsa-patterns&countColor=%2300599C)
 
@@ -72,6 +72,9 @@ dsa/
 │   ├── 503_NextGreaterElementII.cpp
 │   ├── 739_DailyTemperatures.cpp
 │   └── 1209_RemoveDuplicatesII.cpp
+├── 07_HashMap/
+│   ├── README.md                        ← Pattern cheat sheet
+│   └── 387_FirstUniqueCharacter.cpp
 ├── 08_Prefix_Sum/
 │   ├── README.md                        ← Pattern cheat sheet
 │   ├── 525_ContiguousArray.cpp
@@ -108,8 +111,9 @@ Files follow the convention: `<LC#>_<ProblemName>_<Approach>.cpp`
 |---|---------|--------|-----------------|
 | 02 | Two Pointers | [`02_Two_Pointers/`](./02_Two_Pointers/) | 7 |
 | 03 | Sliding Window | [`03_Sliding_Window/`](./03_Sliding_Window/) | 7 |
-| 06 | Stack | [`06_Stack/`](./06_Stack/) | 6 |
 | 04 | Fast & Slow Pointers | [`04_Fast_Slow_Pointers/`](./04_Fast_Slow_Pointers/) | 5 |
+| 06 | Stack | [`06_Stack/`](./06_Stack/) | 6 |
+| 07 | HashMap | [`07_HashMap/`](./07_HashMap/) | 1 |
 | 08 | Prefix Sum | [`08_Prefix_Sum/`](./08_Prefix_Sum/) | 4 |
 | 15 | Merge Intervals | [`15_Merge_Intervals/`](./15_Merge_Intervals/) | 5 |
 | 17 | Kadane's Algorithm | [`17_Kadanes_Algorithm/`](./17_Kadanes_Algorithm/) | 6 |
@@ -160,6 +164,7 @@ Files follow the convention: `<LC#>_<ProblemName>_<Approach>.cpp`
 | Stack | 739 | Daily Temperatures | 🟡 Medium | Monotonic stack of indices (right→left) | ✅ Done |
 | Stack | 503 | Next Greater Element II | 🟡 Medium | Monotonic stack + pre-loaded circular wrap | ✅ Done |
 | Stack | 1209 | Remove All Adjacent Duplicates in String II | 🟡 Medium | Stack of (char, count) pairs | ✅ Done |
+| HashMap | 387 | First Unique Character in a String | 🟢 Easy | Frequency map → first count==1 | ✅ Done |
 
 ---
 
@@ -188,6 +193,7 @@ Or use the helper script (Windows PowerShell):
 ## 🏗️ Patterns Roadmap
 
 - [ ] 01 — Arrays & Hashing
+- [x] **07 — HashMap**
 - [x] **02 — Two Pointers**
 - [x] **03 — Sliding Window**
 - [x] **06 — Stack**
