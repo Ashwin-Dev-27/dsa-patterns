@@ -86,6 +86,7 @@ for (string& w : words) {
 |------|-------------|------------|----------|------|
 | 384 | Ransom Note | 🟢 Easy | Two frequency maps comparison | [`384_RansomNote.cpp`](./384_RansomNote.cpp) |
 | 387 | First Unique Character in a String | 🟢 Easy | Frequency map → first count==1 | [`387_FirstUniqueCharacter.cpp`](./387_FirstUniqueCharacter.cpp) |
+| 1189 | Maximum Number of Balloons | 🟢 Easy | Frequency map + min division | [`1189_MaximumNumberOfBalloons.cpp`](./1189_MaximumNumberOfBalloons.cpp) |
 
 ---
 
@@ -99,18 +100,22 @@ g++ -std=c++17 -o out 07_HashMap/387_FirstUniqueCharacter.cpp; .\out
 # LC 384
 g++ -std=c++17 -o out 07_HashMap/384_RansomNote.cpp; .\out
 .\run.ps1 07_HashMap/384_RansomNote.cpp
+
+# LC 1189
+g++ -std=c++17 -o out 07_HashMap/1189_MaximumNumberOfBalloons.cpp; .\out
+.\run.ps1 07_HashMap/1189_MaximumNumberOfBalloons.cpp
 ```
 
-### Expected Output — LC 384
+### Expected Output — LC 1189
 ```
-[PASS]  ransomNote="a"  magazine="b"  expected=0  got=0
-[PASS]  ransomNote="aa" magazine="ab"  expected=0  got=0
-[PASS]  ransomNote="aa" magazine="aab" expected=1  got=1
-[PASS]  ransomNote="abc" magazine="def" expected=0  got=0
-[PASS]  ransomNote="abc" magazine="aabbcc" expected=1  got=1
-[PASS]  ransomNote="aaa" magazine="aa"  expected=0  got=0
-[PASS]  ransomNote="" magazine="anything" expected=1  got=1
-[PASS]  ransomNote="aab" magazine="baa"  expected=1  got=1
+[PASS]  text="nlaebolko"           expected=1  got=1
+[PASS]  text="loonbalxpoonball"   expected=2  got=2
+[PASS]  text="leetcode"           expected=0  got=0
+[PASS]  text="balloon"            expected=1  got=1
+[PASS]  text="balloonballoon"     expected=2  got=2
+[PASS]  text="bbaall"             expected=0  got=0
+[PASS]  text="bbballlloonnn"      expected=1  got=1
+[PASS]  text=""                   expected=0  got=0
 
 8/8 tests passed.
 ```
