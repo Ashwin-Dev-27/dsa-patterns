@@ -86,6 +86,7 @@ for (string& w : words) {
 |------|-------------|------------|----------|------|
 | 384 | Ransom Note | 🟢 Easy | Two frequency maps comparison | [`384_RansomNote.cpp`](./384_RansomNote.cpp) |
 | 387 | First Unique Character in a String | 🟢 Easy | Frequency map → first count==1 | [`387_FirstUniqueCharacter.cpp`](./387_FirstUniqueCharacter.cpp) |
+| 409 | Longest Palindrome | 🟢 Easy | Freq map: take evens + best odd | [`409_LongestPalindrome.cpp`](./409_LongestPalindrome.cpp) |
 | 1189 | Maximum Number of Balloons | 🟢 Easy | Frequency map + min division | [`1189_MaximumNumberOfBalloons.cpp`](./1189_MaximumNumberOfBalloons.cpp) |
 
 ---
@@ -93,29 +94,33 @@ for (string& w : words) {
 ## ▶️ How to Run
 
 ```powershell
+# LC 384
+g++ -std=c++17 -o out 07_HashMap/384_RansomNote.cpp; .\out
+.\run.ps1 07_HashMap/384_RansomNote.cpp
+
 # LC 387
 g++ -std=c++17 -o out 07_HashMap/387_FirstUniqueCharacter.cpp; .\out
 .\run.ps1 07_HashMap/387_FirstUniqueCharacter.cpp
 
-# LC 384
-g++ -std=c++17 -o out 07_HashMap/384_RansomNote.cpp; .\out
-.\run.ps1 07_HashMap/384_RansomNote.cpp
+# LC 409
+g++ -std=c++17 -o out 07_HashMap/409_LongestPalindrome.cpp; .\out
+.\run.ps1 07_HashMap/409_LongestPalindrome.cpp
 
 # LC 1189
 g++ -std=c++17 -o out 07_HashMap/1189_MaximumNumberOfBalloons.cpp; .\out
 .\run.ps1 07_HashMap/1189_MaximumNumberOfBalloons.cpp
 ```
 
-### Expected Output — LC 1189
+### Expected Output — LC 409
 ```
-[PASS]  text="nlaebolko"           expected=1  got=1
-[PASS]  text="loonbalxpoonball"   expected=2  got=2
-[PASS]  text="leetcode"           expected=0  got=0
-[PASS]  text="balloon"            expected=1  got=1
-[PASS]  text="balloonballoon"     expected=2  got=2
-[PASS]  text="bbaall"             expected=0  got=0
-[PASS]  text="bbballlloonnn"      expected=1  got=1
-[PASS]  text=""                   expected=0  got=0
+[PASS]  s="abccccdd"     expected=7  got=7
+[PASS]  s="a"            expected=1  got=1
+[PASS]  s="Aa"           expected=1  got=1
+[PASS]  s="aaaa"         expected=4  got=4
+[PASS]  s="abcde"        expected=1  got=1
+[PASS]  s="aabbcc"       expected=6  got=6
+[PASS]  s="aaabbb"       expected=5  got=5
+[PASS]  s="AaBb"         expected=1  got=1
 
 8/8 tests passed.
 ```
