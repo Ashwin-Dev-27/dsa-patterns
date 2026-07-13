@@ -84,6 +84,7 @@ for (string& w : words) {
 
 | LC # | Problem Name | Difficulty | Approach | File |
 |------|-------------|------------|----------|------|
+| 384 | Ransom Note | 🟢 Easy | Two frequency maps comparison | [`384_RansomNote.cpp`](./384_RansomNote.cpp) |
 | 387 | First Unique Character in a String | 🟢 Easy | Frequency map → first count==1 | [`387_FirstUniqueCharacter.cpp`](./387_FirstUniqueCharacter.cpp) |
 
 ---
@@ -91,23 +92,25 @@ for (string& w : words) {
 ## ▶️ How to Run
 
 ```powershell
-# Compile & run
+# LC 387
 g++ -std=c++17 -o out 07_HashMap/387_FirstUniqueCharacter.cpp; .\out
-
-# Or with the helper script
 .\run.ps1 07_HashMap/387_FirstUniqueCharacter.cpp
+
+# LC 384
+g++ -std=c++17 -o out 07_HashMap/384_RansomNote.cpp; .\out
+.\run.ps1 07_HashMap/384_RansomNote.cpp
 ```
 
-### Expected Output
+### Expected Output — LC 384
 ```
-[PASS]  s="leetcode"         expected=0  got=0
-[PASS]  s="aabb"             expected=-1 got=-1
-[PASS]  s="loveleetcode"     expected=2  got=2
-[PASS]  s="z"                expected=0  got=0
-[PASS]  s="aaaa"             expected=-1 got=-1
-[PASS]  s="aabbccdde"        expected=8  got=8
-[PASS]  s="aabbc"            expected=4  got=4
-[PASS]  s="abacbcd"          expected=3  got=3
+[PASS]  ransomNote="a"  magazine="b"  expected=0  got=0
+[PASS]  ransomNote="aa" magazine="ab"  expected=0  got=0
+[PASS]  ransomNote="aa" magazine="aab" expected=1  got=1
+[PASS]  ransomNote="abc" magazine="def" expected=0  got=0
+[PASS]  ransomNote="abc" magazine="aabbcc" expected=1  got=1
+[PASS]  ransomNote="aaa" magazine="aa"  expected=0  got=0
+[PASS]  ransomNote="" magazine="anything" expected=1  got=1
+[PASS]  ransomNote="aab" magazine="baa"  expected=1  got=1
 
 8/8 tests passed.
 ```
