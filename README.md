@@ -24,13 +24,13 @@ Every solution is:
 
 | Metric | Value |
 |:---|:---|
-| 🌐 **Global Rank** | #3,099,789 |
+| 🌐 **Global Rank** | #3,102,837 |
 | ✅ **Total Solved** | **38** / 4003 &nbsp;`0.9%` |
 | 🟢 Easy | 13 / 956 &nbsp; `░░░░░░░░░░` |
 | 🟡 Medium | 24 / 2091 &nbsp; `░░░░░░░░░░` |
 | 🔴 Hard | 1 / 956 &nbsp; `░░░░░░░░░░` |
 
-<sub>🕐 Last synced: 27 Jul 2026 · 06:04 UTC</sub>
+<sub>🕐 Last synced: 28 Jul 2026 · 05:30 UTC</sub>
 <!-- LEETCODE-STATS:END -->
 
 ---
