@@ -30,7 +30,7 @@ Every solution is:
 | 🟡 Medium | 24 / 2105 &nbsp; `░░░░░░░░░░` |
 | 🔴 Hard | 1 / 967 &nbsp; `░░░░░░░░░░` |
 
-<sub>🕐 Last synced: 28 Aug 2026 · 14:30 UTC</sub>
+<sub>🕐 Last synced: 29 Aug 2026 · 09:17 UTC</sub>
 <!-- LEETCODE-STATS:END -->
 
 ---
