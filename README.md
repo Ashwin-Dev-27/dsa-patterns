@@ -2,8 +2,8 @@
 
 ![Language](https://img.shields.io/badge/Language-C++-00599C?logo=cplusplus&logoColor=white)
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen)
-![Problems Solved](https://img.shields.io/badge/Problems%20Solved-44-blue)
-![Patterns Covered](https://img.shields.io/badge/Patterns%20Covered-8-blueviolet)
+![Problems Solved](https://img.shields.io/badge/Problems%20Solved-45-blue)
+![Patterns Covered](https://img.shields.io/badge/Patterns%20Covered-9-blueviolet)
 ![License](https://img.shields.io/badge/License-MIT-green)
 ![Visitors](https://api.visitorbadge.io/api/visitors?path=Ashwin-Dev-27.dsa-patterns&countColor=%2300599C)
 
@@ -11,6 +11,7 @@ A structured, pattern-first collection of DSA problems — built for **deep unde
 clean **interview revision**, and a professional **portfolio**.
 
 Every solution is:
+
 - ✅ **Locally runnable** — `main()` with test cases and assertions
 - ✅ **Fully documented** — approach, complexity, and evolution notes
 - ✅ **Pattern-organized** — grouped by algorithmic technique, not just problem number
@@ -18,17 +19,18 @@ Every solution is:
 ---
 
 <!-- LEETCODE-STATS:START -->
+
 ## 🏆 LeetCode Progress
 
 > 🔄 Auto-synced on every push &nbsp;|&nbsp; [View Profile ↗](https://leetcode.com/u/Ashwin_Dev_27/)
 
-| Metric | Value |
-|:---|:---|
-| 🌐 **Global Rank** | #3,332,657 |
-| ✅ **Total Solved** | **38** / 4123 &nbsp;`0.9%` |
-| 🟢 Easy | 13 / 978 &nbsp; `░░░░░░░░░░` |
-| 🟡 Medium | 24 / 2152 &nbsp; `░░░░░░░░░░` |
-| 🔴 Hard | 1 / 993 &nbsp; `░░░░░░░░░░` |
+| Metric              | Value                         |
+| :------------------ | :---------------------------- |
+| 🌐 **Global Rank**  | #3,332,657                    |
+| ✅ **Total Solved** | **38** / 4123 &nbsp;`0.9%`    |
+| 🟢 Easy             | 13 / 978 &nbsp; `░░░░░░░░░░`  |
+| 🟡 Medium           | 24 / 2152 &nbsp; `░░░░░░░░░░` |
+| 🔴 Hard             | 1 / 993 &nbsp; `░░░░░░░░░░`   |
 
 <sub>🕐 Last synced: 23 Nov 2026 · 11:02 UTC</sub>
 <!-- LEETCODE-STATS:END -->
@@ -64,6 +66,9 @@ dsa/
 │   ├── 202_HappyNumber.cpp
 │   ├── 287_FindDuplicateNumber.cpp
 │   └── 876_MiddleOfLinkedList.cpp
+├── 05_Binary_Search/
+│   ├── README.md                        ← Pattern cheat sheet
+│   └── 704_BinarySearch.cpp
 ├── 06_Stack/
 │   ├── README.md                        ← Pattern cheat sheet
 │   ├── 1047_RemoveDuplicates.cpp
@@ -110,67 +115,69 @@ Files follow the convention: `<LC#>_<ProblemName>_<Approach>.cpp`
 
 ## 🗺️ Pattern Index
 
-| # | Pattern | Folder | Problems Logged |
-|---|---------|--------|-----------------|
-| 02 | Two Pointers | [`02_Two_Pointers/`](./02_Two_Pointers/) | 7 |
-| 03 | Sliding Window | [`03_Sliding_Window/`](./03_Sliding_Window/) | 7 |
-| 04 | Fast & Slow Pointers | [`04_Fast_Slow_Pointers/`](./04_Fast_Slow_Pointers/) | 5 |
-| 06 | Stack | [`06_Stack/`](./06_Stack/) | 6 |
-| 07 | HashMap | [`07_HashMap/`](./07_HashMap/) | 4 |
-| 08 | Prefix Sum | [`08_Prefix_Sum/`](./08_Prefix_Sum/) | 4 |
-| 15 | Merge Intervals | [`15_Merge_Intervals/`](./15_Merge_Intervals/) | 5 |
-| 17 | Kadane's Algorithm | [`17_Kadanes_Algorithm/`](./17_Kadanes_Algorithm/) | 6 |
+| #   | Pattern              | Folder                                               | Problems Logged |
+| --- | -------------------- | ---------------------------------------------------- | --------------- |
+| 02  | Two Pointers         | [`02_Two_Pointers/`](./02_Two_Pointers/)             | 7               |
+| 03  | Sliding Window       | [`03_Sliding_Window/`](./03_Sliding_Window/)         | 7               |
+| 04  | Fast & Slow Pointers | [`04_Fast_Slow_Pointers/`](./04_Fast_Slow_Pointers/) | 5               |
+| 05  | Binary Search        | [`05_Binary_Search/`](./05_Binary_Search/)           | 1               |
+| 06  | Stack                | [`06_Stack/`](./06_Stack/)                           | 6               |
+| 07  | HashMap              | [`07_HashMap/`](./07_HashMap/)                       | 4               |
+| 08  | Prefix Sum           | [`08_Prefix_Sum/`](./08_Prefix_Sum/)                 | 4               |
+| 15  | Merge Intervals      | [`15_Merge_Intervals/`](./15_Merge_Intervals/)       | 5               |
+| 17  | Kadane's Algorithm   | [`17_Kadanes_Algorithm/`](./17_Kadanes_Algorithm/)   | 6               |
 
 ---
 
 ## 📊 Progress Tracker
 
-| Pattern | LC # | Problem Name | Difficulty | Approaches Logged | Status |
-|---------|------|--------------|------------|-------------------|--------|
-| Two Pointers | 167 | Two Sum II – Input Array Is Sorted | 🟡 Medium | Optimized | ✅ Done |
-| Two Pointers | 26  | Remove Duplicates from Sorted Array | 🟢 Easy | Original | ✅ Done |
-| Two Pointers | 977 | Squares of a Sorted Array | 🟢 Easy | Split & Merge | ✅ Done |
-| Two Pointers | 15  | 3Sum | 🟡 Medium | Fix + Two Pointers | ✅ Done |
-| Two Pointers | 16  | 3Sum Closest | 🟡 Medium | Fix + Two Pointers | ✅ Done |
-| Two Pointers | GFG | Count Triplets with Given Sum | 🟡 Medium | Fix + Two Pointers | ✅ Done |
-| Two Pointers | 75 | Sort Colors | 🟡 Medium | Dutch National Flag | ✅ Done |
-| Sliding Window | GFG | Max Sum Subarray of size K | 🟢 Easy | Original | ✅ Done |
-| Sliding Window | 3 | Longest Substring Without Repeating Characters | 🟡 Medium | Original | ✅ Done |
-| Sliding Window | 209 | Minimum Size Subarray Sum | 🟡 Medium | Original | ✅ Done |
-| Sliding Window | 424 | Longest Repeating Character Replacement | 🟡 Medium | Optimized | ✅ Done |
-| Sliding Window | GFG | Longest K Unique Characters Substring | 🟡 Medium | Original | ✅ Done |
-| Sliding Window | 904 | Fruit Into Baskets | 🟡 Medium | Original | ✅ Done |
-| Sliding Window | 76  | Minimum Window Substring | 🔴 Hard | Optimized | ✅ Done |
-| Fast & Slow Pointers | 141 | Linked List Cycle | 🟢 Easy | Floyd's Detection | ✅ Done |
-| Fast & Slow Pointers | 142 | Linked List Cycle II | 🟡 Medium | Floyd's Phase 2 | ✅ Done |
-| Fast & Slow Pointers | 876 | Middle of the Linked List | 🟢 Easy | Fast reaches end | ✅ Done |
-| Fast & Slow Pointers | 287 | Find the Duplicate Number | 🟡 Medium | Array-as-list + Floyd's | ✅ Done |
-| Fast & Slow Pointers | 202 | Happy Number | 🟢 Easy | Floyd's on digit-sum sequence | ✅ Done |
-| Prefix Sum | 525 | Contiguous Array | 🟡 Medium | Prefix Sum Difference Tracking | ✅ Done |
-| Prefix Sum | 560 | Subarray Sum Equals K | 🟡 Medium | Prefix Sum + Hash Map | ✅ Done |
-| Prefix Sum | 724 | Find Pivot Index | 🟢 Easy | Original | ✅ Done |
-| Prefix Sum | 974 | Subarray Sums Divisible by K | 🟡 Medium | Remainder Frequency Map | ✅ Done |
-| Kadane's Algorithm | 53 | Maximum Subarray | 🟡 Medium | Original | ✅ Done |
-| Kadane's Algorithm | 152 | Maximum Product Subarray | 🟡 Medium | Dual-tracking max & min | ✅ Done |
-| Kadane's Algorithm | 918  | Maximum Sum Circular Subarray | 🟡 Medium | Kadane's with wrap-around | ✅ Done |
-| Kadane's Algorithm | 1186 | Maximum Subarray Sum with One Deletion | 🟡 Medium | Two-state DP | ✅ Done |
-| Kadane's Algorithm | 1749 | Maximum Absolute Sum of Any Subarray | 🟡 Medium | Dual Kadane's | ✅ Done |
-| Kadane's Algorithm | GFG | Smallest sum contiguous subarray | 🟢 Easy | Minimum variant | ✅ Done |
-| Merge Intervals | 56  | Merge Intervals | 🟡 Medium | Sort + greedy scan | ✅ Done |
-| Merge Intervals | 57  | Insert Interval | 🟡 Medium | Append + sort + merge | ✅ Done |
-| Merge Intervals | 986 | Interval List Intersections | 🟡 Medium | Two-pointer scan | ✅ Done |
-| Merge Intervals | GFG | Check if Any Two Intervals Overlap | 🟡 Medium | Sort + adjacent scan | ✅ Done |
-| Merge Intervals | GFG | Minimum Meeting Rooms | 🟡 Medium | Sort starts & ends + sweep | ✅ Done |
-| Stack | 1047 | Remove All Adjacent Duplicates In String | 🟢 Easy | Push/pop pairs | ✅ Done |
-| Stack | 20 | Valid Parentheses | 🟢 Easy | Stack match open/close | ✅ Done |
-| Stack | 496 | Next Greater Element I | 🟢 Easy | Monotonic stack (right→left) + hash map | ✅ Done |
-| Stack | 739 | Daily Temperatures | 🟡 Medium | Monotonic stack of indices (right→left) | ✅ Done |
-| Stack | 503 | Next Greater Element II | 🟡 Medium | Monotonic stack + pre-loaded circular wrap | ✅ Done |
-| Stack | 1209 | Remove All Adjacent Duplicates in String II | 🟡 Medium | Stack of (char, count) pairs | ✅ Done |
-| HashMap | 384 | Ransom Note | 🟢 Easy | Two frequency maps comparison | ✅ Done |
-| HashMap | 387 | First Unique Character in a String | 🟢 Easy | Frequency map → first count==1 | ✅ Done |
-| HashMap | 409 | Longest Palindrome | 🟢 Easy | Freq map: take evens + best odd | ✅ Done |
-| HashMap | 1189 | Maximum Number of Balloons | 🟢 Easy | Frequency map + min division | ✅ Done |
+| Pattern              | LC # | Problem Name                                   | Difficulty | Approaches Logged                          | Status  |
+| -------------------- | ---- | ---------------------------------------------- | ---------- | ------------------------------------------ | ------- |
+| Two Pointers         | 167  | Two Sum II – Input Array Is Sorted             | 🟡 Medium  | Optimized                                  | ✅ Done |
+| Two Pointers         | 26   | Remove Duplicates from Sorted Array            | 🟢 Easy    | Original                                   | ✅ Done |
+| Two Pointers         | 977  | Squares of a Sorted Array                      | 🟢 Easy    | Split & Merge                              | ✅ Done |
+| Two Pointers         | 15   | 3Sum                                           | 🟡 Medium  | Fix + Two Pointers                         | ✅ Done |
+| Two Pointers         | 16   | 3Sum Closest                                   | 🟡 Medium  | Fix + Two Pointers                         | ✅ Done |
+| Two Pointers         | GFG  | Count Triplets with Given Sum                  | 🟡 Medium  | Fix + Two Pointers                         | ✅ Done |
+| Two Pointers         | 75   | Sort Colors                                    | 🟡 Medium  | Dutch National Flag                        | ✅ Done |
+| Sliding Window       | GFG  | Max Sum Subarray of size K                     | 🟢 Easy    | Original                                   | ✅ Done |
+| Sliding Window       | 3    | Longest Substring Without Repeating Characters | 🟡 Medium  | Original                                   | ✅ Done |
+| Sliding Window       | 209  | Minimum Size Subarray Sum                      | 🟡 Medium  | Original                                   | ✅ Done |
+| Sliding Window       | 424  | Longest Repeating Character Replacement        | 🟡 Medium  | Optimized                                  | ✅ Done |
+| Sliding Window       | GFG  | Longest K Unique Characters Substring          | 🟡 Medium  | Original                                   | ✅ Done |
+| Sliding Window       | 904  | Fruit Into Baskets                             | 🟡 Medium  | Original                                   | ✅ Done |
+| Sliding Window       | 76   | Minimum Window Substring                       | 🔴 Hard    | Optimized                                  | ✅ Done |
+| Fast & Slow Pointers | 141  | Linked List Cycle                              | 🟢 Easy    | Floyd's Detection                          | ✅ Done |
+| Fast & Slow Pointers | 142  | Linked List Cycle II                           | 🟡 Medium  | Floyd's Phase 2                            | ✅ Done |
+| Fast & Slow Pointers | 876  | Middle of the Linked List                      | 🟢 Easy    | Fast reaches end                           | ✅ Done |
+| Fast & Slow Pointers | 287  | Find the Duplicate Number                      | 🟡 Medium  | Array-as-list + Floyd's                    | ✅ Done |
+| Fast & Slow Pointers | 202  | Happy Number                                   | 🟢 Easy    | Floyd's on digit-sum sequence              | ✅ Done |
+| Prefix Sum           | 525  | Contiguous Array                               | 🟡 Medium  | Prefix Sum Difference Tracking             | ✅ Done |
+| Prefix Sum           | 560  | Subarray Sum Equals K                          | 🟡 Medium  | Prefix Sum + Hash Map                      | ✅ Done |
+| Prefix Sum           | 724  | Find Pivot Index                               | 🟢 Easy    | Original                                   | ✅ Done |
+| Prefix Sum           | 974  | Subarray Sums Divisible by K                   | 🟡 Medium  | Remainder Frequency Map                    | ✅ Done |
+| Kadane's Algorithm   | 53   | Maximum Subarray                               | 🟡 Medium  | Original                                   | ✅ Done |
+| Kadane's Algorithm   | 152  | Maximum Product Subarray                       | 🟡 Medium  | Dual-tracking max & min                    | ✅ Done |
+| Kadane's Algorithm   | 918  | Maximum Sum Circular Subarray                  | 🟡 Medium  | Kadane's with wrap-around                  | ✅ Done |
+| Kadane's Algorithm   | 1186 | Maximum Subarray Sum with One Deletion         | 🟡 Medium  | Two-state DP                               | ✅ Done |
+| Kadane's Algorithm   | 1749 | Maximum Absolute Sum of Any Subarray           | 🟡 Medium  | Dual Kadane's                              | ✅ Done |
+| Kadane's Algorithm   | GFG  | Smallest sum contiguous subarray               | 🟢 Easy    | Minimum variant                            | ✅ Done |
+| Merge Intervals      | 56   | Merge Intervals                                | 🟡 Medium  | Sort + greedy scan                         | ✅ Done |
+| Merge Intervals      | 57   | Insert Interval                                | 🟡 Medium  | Append + sort + merge                      | ✅ Done |
+| Merge Intervals      | 986  | Interval List Intersections                    | 🟡 Medium  | Two-pointer scan                           | ✅ Done |
+| Merge Intervals      | GFG  | Check if Any Two Intervals Overlap             | 🟡 Medium  | Sort + adjacent scan                       | ✅ Done |
+| Merge Intervals      | GFG  | Minimum Meeting Rooms                          | 🟡 Medium  | Sort starts & ends + sweep                 | ✅ Done |
+| Stack                | 1047 | Remove All Adjacent Duplicates In String       | 🟢 Easy    | Push/pop pairs                             | ✅ Done |
+| Stack                | 20   | Valid Parentheses                              | 🟢 Easy    | Stack match open/close                     | ✅ Done |
+| Stack                | 496  | Next Greater Element I                         | 🟢 Easy    | Monotonic stack (right→left) + hash map    | ✅ Done |
+| Stack                | 739  | Daily Temperatures                             | 🟡 Medium  | Monotonic stack of indices (right→left)    | ✅ Done |
+| Stack                | 503  | Next Greater Element II                        | 🟡 Medium  | Monotonic stack + pre-loaded circular wrap | ✅ Done |
+| Stack                | 1209 | Remove All Adjacent Duplicates in String II    | 🟡 Medium  | Stack of (char, count) pairs               | ✅ Done |
+| HashMap              | 384  | Ransom Note                                    | 🟢 Easy    | Two frequency maps comparison              | ✅ Done |
+| HashMap              | 387  | First Unique Character in a String             | 🟢 Easy    | Frequency map → first count==1             | ✅ Done |
+| HashMap              | 409  | Longest Palindrome                             | 🟢 Easy    | Freq map: take evens + best odd            | ✅ Done |
+| HashMap              | 1189 | Maximum Number of Balloons                     | 🟢 Easy    | Frequency map + min division               | ✅ Done |
+| Binary Search        | 704  | Binary Search                                  | 🟢 Easy    | Classic low/high convergence               | ✅ Done |
 
 ---
 
@@ -183,11 +190,13 @@ g++ -std=c++17 -o solution <path/to/file.cpp> && ./solution
 ```
 
 **Example**
+
 ```bash
 g++ -std=c++17 -o solution 03_Sliding_Window/76_MinimumWindowSubstring.cpp && ./solution
 ```
 
 Or use the helper script (Windows PowerShell):
+
 ```powershell
 .\run.ps1 03_Sliding_Window/76_MinimumWindowSubstring.cpp
 ```
@@ -203,7 +212,7 @@ Or use the helper script (Windows PowerShell):
 - [x] **02 — Two Pointers**
 - [x] **03 — Sliding Window**
 - [x] **06 — Stack**
-- [ ] 05 — Binary Search
+- 🔄 **05 — Binary Search** _(in progress)_
 - [x] **06 — Fast & Slow Pointers (Linked List)**
 - [ ] 07 — Trees
 - [x] **08 — Prefix Sum**
@@ -222,12 +231,12 @@ Or use the helper script (Windows PowerShell):
 
 ## 📝 File Naming Convention
 
-| Item | Convention | Example |
-|------|-----------|---------|
-| Folder | `<NN>_<PatternName>/` | `02_Two_Pointers/` |
-| Solution | `<LC#>_<Name>_BruteForce.cpp` | `167_TwoSumII_BruteForce.cpp` |
-| Solution | `<LC#>_<Name>_Optimized.cpp` | `167_TwoSumII_Optimized.cpp` |
-| Pattern doc | `README.md` inside each folder | `02_Two_Pointers/README.md` |
+| Item        | Convention                     | Example                       |
+| ----------- | ------------------------------ | ----------------------------- |
+| Folder      | `<NN>_<PatternName>/`          | `02_Two_Pointers/`            |
+| Solution    | `<LC#>_<Name>_BruteForce.cpp`  | `167_TwoSumII_BruteForce.cpp` |
+| Solution    | `<LC#>_<Name>_Optimized.cpp`   | `167_TwoSumII_Optimized.cpp`  |
+| Pattern doc | `README.md` inside each folder | `02_Two_Pointers/README.md`   |
 
 ---
 
