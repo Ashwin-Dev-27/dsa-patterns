@@ -140,6 +140,7 @@ int peakIndexInMountainArray(vector<int>& arr) {
 
 | LC # | Problem Name | Difficulty | Approach | File |
 |------|-------------|------------|----------|------|
+| 162 | Find Peak Element | 🟡 Medium | Slope comparison — any local peak is valid, converge to `low == high` | [`162_FindPeakElement.cpp`](./162_FindPeakElement.cpp) |
 | 704 | Binary Search | 🟢 Easy | Classic — low/high convergence, `(low+high)/2` mid | [`704_BinarySearch.cpp`](./704_BinarySearch.cpp) |
 | 852 | Peak Index in a Mountain Array | 🟡 Medium | Slope comparison — `arr[mid]` vs `arr[mid+1]`, converge to `low == high` | [`852_PeakIndexInMountainArray.cpp`](./852_PeakIndexInMountainArray.cpp) |
 
@@ -148,6 +149,10 @@ int peakIndexInMountainArray(vector<int>& arr) {
 ## ▶️ How to Run
 
 ```powershell
+# LC 162
+g++ -std=c++17 -o out 05_Binary_Search/162_FindPeakElement.cpp; .\out
+.\run.ps1 05_Binary_Search/162_FindPeakElement.cpp
+
 # LC 704
 g++ -std=c++17 -o out 05_Binary_Search/704_BinarySearch.cpp; .\out
 .\run.ps1 05_Binary_Search/704_BinarySearch.cpp
@@ -155,6 +160,20 @@ g++ -std=c++17 -o out 05_Binary_Search/704_BinarySearch.cpp; .\out
 # LC 852
 g++ -std=c++17 -o out 05_Binary_Search/852_PeakIndexInMountainArray.cpp; .\out
 .\run.ps1 05_Binary_Search/852_PeakIndexInMountainArray.cpp
+```
+
+### Expected Output — LC 162
+```
+[PASS]  nums=[1,2,3,1]                 expected=2  got=2
+[PASS]  nums=[1,2,1,3,5,6,4]           expected=5  got=5
+[PASS]  nums=[1]                       expected=0  got=0
+[PASS]  nums=[1,2]                     expected=1  got=1
+[PASS]  nums=[2,1]                     expected=0  got=0
+[PASS]  nums=[-1,-2,-3,-4]             expected=0  got=0
+[PASS]  nums=[1,2,3,4]                 expected=3  got=3
+[PASS]  nums=[1,3,2,4,5,2]             expected=4  got=4
+
+8/8 tests passed.
 ```
 
 ### Expected Output — LC 704
