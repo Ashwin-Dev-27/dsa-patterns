@@ -93,6 +93,19 @@ while (lo <= hi) {
 return -1;
 ```
 
+### 6 — Mountain / Peak (slope comparison)
+```cpp
+int peakIndexInMountainArray(vector<int>& arr) {
+    int lo = 0, hi = arr.size() - 1;
+    while (lo < hi) {
+        int mid = lo + (hi - lo) / 2;
+        if (arr[mid] < arr[mid + 1]) lo = mid + 1;  // still ascending → peak is right
+        else                         hi = mid;      // descending → peak is mid or left
+    }
+    return lo;   // lo == hi at the peak
+}
+```
+
 ---
 
 ## ⚡ Complexity
@@ -128,6 +141,7 @@ return -1;
 | LC # | Problem Name | Difficulty | Approach | File |
 |------|-------------|------------|----------|------|
 | 704 | Binary Search | 🟢 Easy | Classic — low/high convergence, `(low+high)/2` mid | [`704_BinarySearch.cpp`](./704_BinarySearch.cpp) |
+| 852 | Peak Index in a Mountain Array | 🟡 Medium | Slope comparison — `arr[mid]` vs `arr[mid+1]`, converge to `low == high` | [`852_PeakIndexInMountainArray.cpp`](./852_PeakIndexInMountainArray.cpp) |
 
 ---
 
@@ -137,6 +151,10 @@ return -1;
 # LC 704
 g++ -std=c++17 -o out 05_Binary_Search/704_BinarySearch.cpp; .\out
 .\run.ps1 05_Binary_Search/704_BinarySearch.cpp
+
+# LC 852
+g++ -std=c++17 -o out 05_Binary_Search/852_PeakIndexInMountainArray.cpp; .\out
+.\run.ps1 05_Binary_Search/852_PeakIndexInMountainArray.cpp
 ```
 
 ### Expected Output — LC 704
@@ -149,6 +167,20 @@ g++ -std=c++17 -o out 05_Binary_Search/704_BinarySearch.cpp; .\out
 [PASS]  nums=[1,3,5,7,9]       target=9   expected=4  got=4
 [PASS]  nums=[1,3,5,7,9]       target=5   expected=2  got=2
 [PASS]  nums=[-10,-5,0,3,7]    target=-20 expected=-1  got=-1
+
+8/8 tests passed.
+```
+
+### Expected Output — LC 852
+```
+[PASS]  arr=[0,1,0]                 expected=1  got=1
+[PASS]  arr=[0,2,1,0]               expected=1  got=1
+[PASS]  arr=[0,10,5,2]              expected=1  got=1
+[PASS]  arr=[3,5,4]                 expected=1  got=1
+[PASS]  arr=[1,2,4,3]               expected=2  got=2
+[PASS]  arr=[1,3,2]                 expected=1  got=1
+[PASS]  arr=[1,2,3,4,5,3,1]         expected=4  got=4
+[PASS]  arr=[-5,-3,-1,-2,-4]        expected=2  got=2
 
 8/8 tests passed.
 ```
