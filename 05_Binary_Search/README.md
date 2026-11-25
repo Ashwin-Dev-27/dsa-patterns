@@ -106,6 +106,19 @@ int peakIndexInMountainArray(vector<int>& arr) {
 }
 ```
 
+### 7 — Rotated Sorted Array — Find Minimum
+```cpp
+int findMin(vector<int>& nums) {
+    int lo = 0, hi = nums.size() - 1;
+    while (lo < hi) {
+        int mid = lo + (hi - lo) / 2;
+        if (nums[mid] > nums[hi]) lo = mid + 1;  // min is strictly right of mid
+        else                      hi = mid;      // mid could be the minimum
+    }
+    return nums[lo];
+}
+```
+
 ---
 
 ## ⚡ Complexity
@@ -140,15 +153,21 @@ int peakIndexInMountainArray(vector<int>& arr) {
 
 | LC # | Problem Name | Difficulty | Approach | File |
 |------|-------------|------------|----------|------|
+| 153 | Find Minimum in Rotated Sorted Array | 🟡 Medium | Compare `nums[mid]` with `nums[n-1]` — converge on the rotation point | [`153_FindMinimumInRotatedSortedArray.cpp`](./153_FindMinimumInRotatedSortedArray.cpp) |
 | 162 | Find Peak Element | 🟡 Medium | Slope comparison — any local peak is valid, converge to `low == high` | [`162_FindPeakElement.cpp`](./162_FindPeakElement.cpp) |
 | 704 | Binary Search | 🟢 Easy | Classic — low/high convergence, `(low+high)/2` mid | [`704_BinarySearch.cpp`](./704_BinarySearch.cpp) |
 | 852 | Peak Index in a Mountain Array | 🟡 Medium | Slope comparison — `arr[mid]` vs `arr[mid+1]`, converge to `low == high` | [`852_PeakIndexInMountainArray.cpp`](./852_PeakIndexInMountainArray.cpp) |
+| 33  | Search in Rotated Sorted Array | 🟡 Medium | Identify sorted half → binary search it (`low + (high-low)/2` safe mid) | [`33_SearchInRotatedSortedArray.cpp`](./33_SearchInRotatedSortedArray.cpp) |
 
 ---
 
 ## ▶️ How to Run
 
 ```powershell
+# LC 153
+g++ -std=c++17 -o out 05_Binary_Search/153_FindMinimumInRotatedSortedArray.cpp; .\out
+.\run.ps1 05_Binary_Search/153_FindMinimumInRotatedSortedArray.cpp
+
 # LC 162
 g++ -std=c++17 -o out 05_Binary_Search/162_FindPeakElement.cpp; .\out
 .\run.ps1 05_Binary_Search/162_FindPeakElement.cpp
@@ -160,6 +179,38 @@ g++ -std=c++17 -o out 05_Binary_Search/704_BinarySearch.cpp; .\out
 # LC 852
 g++ -std=c++17 -o out 05_Binary_Search/852_PeakIndexInMountainArray.cpp; .\out
 .\run.ps1 05_Binary_Search/852_PeakIndexInMountainArray.cpp
+
+# LC 33
+g++ -std=c++17 -o out 05_Binary_Search/33_SearchInRotatedSortedArray.cpp; .\out
+.\run.ps1 05_Binary_Search/33_SearchInRotatedSortedArray.cpp
+```
+
+### Expected Output — LC 153
+```
+[PASS]  nums=[3,4,5,1,2]               expected=1  got=1
+[PASS]  nums=[4,5,6,7,0,1,2]           expected=0  got=0
+[PASS]  nums=[11,13,15,17]             expected=11  got=11
+[PASS]  nums=[7]                       expected=7  got=7
+[PASS]  nums=[5,3]                     expected=3  got=3
+[PASS]  nums=[3,5]                     expected=3  got=3
+[PASS]  nums=[6,7,8,9,2,3,4]           expected=2  got=2
+[PASS]  nums=[2,3,4,-5,-4,-3,-2]       expected=-5  got=-5
+
+8/8 tests passed.
+```
+
+### Expected Output — LC 33
+```
+[PASS]  nums=[4,5,6,7,0,1,2]  target=0  expected=4  got=4
+[PASS]  nums=[4,5,6,7,0,1,2]  target=3  expected=-1  got=-1
+[PASS]  nums=[1]               target=0  expected=-1  got=-1
+[PASS]  nums=[1]               target=1  expected=0  got=0
+[PASS]  nums=[3,1]             target=1  expected=1  got=1
+[PASS]  nums=[4,5,6,7,0,1,2]  target=4  expected=0  got=0
+[PASS]  nums=[1,2,3,4,5]       target=3  expected=2  got=2
+[PASS]  nums=[4,5,6,7,0,1,2]  target=8  expected=-1  got=-1
+
+8/8 tests passed.
 ```
 
 ### Expected Output — LC 162
@@ -172,6 +223,20 @@ g++ -std=c++17 -o out 05_Binary_Search/852_PeakIndexInMountainArray.cpp; .\out
 [PASS]  nums=[-1,-2,-3,-4]             expected=0  got=0
 [PASS]  nums=[1,2,3,4]                 expected=3  got=3
 [PASS]  nums=[1,3,2,4,5,2]             expected=4  got=4
+
+8/8 tests passed.
+```
+
+### Expected Output — LC 33
+```
+[PASS]  nums=[4,5,6,7,0,1,2]  target=0  expected=4  got=4
+[PASS]  nums=[4,5,6,7,0,1,2]  target=3  expected=-1  got=-1
+[PASS]  nums=[1]               target=0  expected=-1  got=-1
+[PASS]  nums=[1]               target=1  expected=0  got=0
+[PASS]  nums=[3,1]             target=1  expected=1  got=1
+[PASS]  nums=[4,5,6,7,0,1,2]  target=4  expected=0  got=0
+[PASS]  nums=[1,2,3,4,5]       target=3  expected=2  got=2
+[PASS]  nums=[4,5,6,7,0,1,2]  target=8  expected=-1  got=-1
 
 8/8 tests passed.
 ```
@@ -190,6 +255,20 @@ g++ -std=c++17 -o out 05_Binary_Search/852_PeakIndexInMountainArray.cpp; .\out
 8/8 tests passed.
 ```
 
+### Expected Output — LC 33
+```
+[PASS]  nums=[4,5,6,7,0,1,2]  target=0  expected=4  got=4
+[PASS]  nums=[4,5,6,7,0,1,2]  target=3  expected=-1  got=-1
+[PASS]  nums=[1]               target=0  expected=-1  got=-1
+[PASS]  nums=[1]               target=1  expected=0  got=0
+[PASS]  nums=[3,1]             target=1  expected=1  got=1
+[PASS]  nums=[4,5,6,7,0,1,2]  target=4  expected=0  got=0
+[PASS]  nums=[1,2,3,4,5]       target=3  expected=2  got=2
+[PASS]  nums=[4,5,6,7,0,1,2]  target=8  expected=-1  got=-1
+
+8/8 tests passed.
+```
+
 ### Expected Output — LC 852
 ```
 [PASS]  arr=[0,1,0]                 expected=1  got=1
@@ -200,6 +279,20 @@ g++ -std=c++17 -o out 05_Binary_Search/852_PeakIndexInMountainArray.cpp; .\out
 [PASS]  arr=[1,3,2]                 expected=1  got=1
 [PASS]  arr=[1,2,3,4,5,3,1]         expected=4  got=4
 [PASS]  arr=[-5,-3,-1,-2,-4]        expected=2  got=2
+
+8/8 tests passed.
+```
+
+### Expected Output — LC 33
+```
+[PASS]  nums=[4,5,6,7,0,1,2]  target=0  expected=4  got=4
+[PASS]  nums=[4,5,6,7,0,1,2]  target=3  expected=-1  got=-1
+[PASS]  nums=[1]               target=0  expected=-1  got=-1
+[PASS]  nums=[1]               target=1  expected=0  got=0
+[PASS]  nums=[3,1]             target=1  expected=1  got=1
+[PASS]  nums=[4,5,6,7,0,1,2]  target=4  expected=0  got=0
+[PASS]  nums=[1,2,3,4,5]       target=3  expected=2  got=2
+[PASS]  nums=[4,5,6,7,0,1,2]  target=8  expected=-1  got=-1
 
 8/8 tests passed.
 ```
