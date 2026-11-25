@@ -2,7 +2,7 @@
 
 ![Language](https://img.shields.io/badge/Language-C++-00599C?logo=cplusplus&logoColor=white)
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen)
-![Problems Solved](https://img.shields.io/badge/Problems%20Solved-49-blue)
+![Problems Solved](https://img.shields.io/badge/Problems%20Solved-50-blue)
 ![Patterns Covered](https://img.shields.io/badge/Patterns%20Covered-9-blueviolet)
 ![License](https://img.shields.io/badge/License-MIT-green)
 ![Visitors](https://api.visitorbadge.io/api/visitors?path=Ashwin-Dev-27.dsa-patterns&countColor=%2300599C)
@@ -71,7 +71,8 @@ dsa/
 │   ├── 153_FindMinimumInRotatedSortedArray.cpp
 │   ├── 162_FindPeakElement.cpp
 │   ├── 704_BinarySearch.cpp
-│   └── 852_PeakIndexInMountainArray.cpp
+│   ├── 852_PeakIndexInMountainArray.cpp
+│   └── 875_KokoEatingBananas.cpp
 ├── 06_Stack/
 │   ├── README.md                        ← Pattern cheat sheet
 │   ├── 1047_RemoveDuplicates.cpp
@@ -123,7 +124,7 @@ Files follow the convention: `<LC#>_<ProblemName>_<Approach>.cpp`
 | 02  | Two Pointers         | [`02_Two_Pointers/`](./02_Two_Pointers/)             | 7               |
 | 03  | Sliding Window       | [`03_Sliding_Window/`](./03_Sliding_Window/)         | 7               |
 | 04  | Fast & Slow Pointers | [`04_Fast_Slow_Pointers/`](./04_Fast_Slow_Pointers/) | 5               |
-| 05  | Binary Search        | [`05_Binary_Search/`](./05_Binary_Search/)           | 5               |
+| 05  | Binary Search        | [`05_Binary_Search/`](./05_Binary_Search/)           | 6               |
 | 06  | Stack                | [`06_Stack/`](./06_Stack/)                           | 6               |
 | 07  | HashMap              | [`07_HashMap/`](./07_HashMap/)                       | 4               |
 | 08  | Prefix Sum           | [`08_Prefix_Sum/`](./08_Prefix_Sum/)                 | 4               |
@@ -184,6 +185,7 @@ Files follow the convention: `<LC#>_<ProblemName>_<Approach>.cpp`
 | Binary Search        | 162  | Find Peak Element                              | 🟡 Medium  | Slope comparison (arr[mid] vs arr[mid+1])  | ✅ Done |
 | Binary Search        | 704  | Binary Search                                  | 🟢 Easy    | Classic low/high convergence               | ✅ Done |
 | Binary Search        | 33   | Search in Rotated Sorted Array                 | 🟡 Medium  | Identify sorted half → binary search it    | ✅ Done |
+| Binary Search        | 875  | Koko Eating Bananas                            | 🟡 Medium  | Binary search on answer (min eating speed) | ✅ Done |
 | Binary Search        | 852  | Peak Index in a Mountain Array                 | 🟡 Medium  | Slope comparison (arr[mid] vs arr[mid+1])  | ✅ Done |
 
 ---

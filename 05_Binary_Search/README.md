@@ -158,6 +158,7 @@ int findMin(vector<int>& nums) {
 | 704 | Binary Search | 🟢 Easy | Classic — low/high convergence, `(low+high)/2` mid | [`704_BinarySearch.cpp`](./704_BinarySearch.cpp) |
 | 852 | Peak Index in a Mountain Array | 🟡 Medium | Slope comparison — `arr[mid]` vs `arr[mid+1]`, converge to `low == high` | [`852_PeakIndexInMountainArray.cpp`](./852_PeakIndexInMountainArray.cpp) |
 | 33  | Search in Rotated Sorted Array | 🟡 Medium | Identify sorted half → binary search it (`low + (high-low)/2` safe mid) | [`33_SearchInRotatedSortedArray.cpp`](./33_SearchInRotatedSortedArray.cpp) |
+| 875 | Koko Eating Bananas | 🟡 Medium | Binary search on answer [1, max(piles)] — minimize speed fitting in h hours | [`875_KokoEatingBananas.cpp`](./875_KokoEatingBananas.cpp) |
 
 ---
 
@@ -183,6 +184,10 @@ g++ -std=c++17 -o out 05_Binary_Search/852_PeakIndexInMountainArray.cpp; .\out
 # LC 33
 g++ -std=c++17 -o out 05_Binary_Search/33_SearchInRotatedSortedArray.cpp; .\out
 .\run.ps1 05_Binary_Search/33_SearchInRotatedSortedArray.cpp
+
+# LC 875
+g++ -std=c++17 -o out 05_Binary_Search/875_KokoEatingBananas.cpp; .\out
+.\run.ps1 05_Binary_Search/875_KokoEatingBananas.cpp
 ```
 
 ### Expected Output — LC 153
@@ -195,20 +200,6 @@ g++ -std=c++17 -o out 05_Binary_Search/33_SearchInRotatedSortedArray.cpp; .\out
 [PASS]  nums=[3,5]                     expected=3  got=3
 [PASS]  nums=[6,7,8,9,2,3,4]           expected=2  got=2
 [PASS]  nums=[2,3,4,-5,-4,-3,-2]       expected=-5  got=-5
-
-8/8 tests passed.
-```
-
-### Expected Output — LC 33
-```
-[PASS]  nums=[4,5,6,7,0,1,2]  target=0  expected=4  got=4
-[PASS]  nums=[4,5,6,7,0,1,2]  target=3  expected=-1  got=-1
-[PASS]  nums=[1]               target=0  expected=-1  got=-1
-[PASS]  nums=[1]               target=1  expected=0  got=0
-[PASS]  nums=[3,1]             target=1  expected=1  got=1
-[PASS]  nums=[4,5,6,7,0,1,2]  target=4  expected=0  got=0
-[PASS]  nums=[1,2,3,4,5]       target=3  expected=2  got=2
-[PASS]  nums=[4,5,6,7,0,1,2]  target=8  expected=-1  got=-1
 
 8/8 tests passed.
 ```
@@ -227,20 +218,6 @@ g++ -std=c++17 -o out 05_Binary_Search/33_SearchInRotatedSortedArray.cpp; .\out
 8/8 tests passed.
 ```
 
-### Expected Output — LC 33
-```
-[PASS]  nums=[4,5,6,7,0,1,2]  target=0  expected=4  got=4
-[PASS]  nums=[4,5,6,7,0,1,2]  target=3  expected=-1  got=-1
-[PASS]  nums=[1]               target=0  expected=-1  got=-1
-[PASS]  nums=[1]               target=1  expected=0  got=0
-[PASS]  nums=[3,1]             target=1  expected=1  got=1
-[PASS]  nums=[4,5,6,7,0,1,2]  target=4  expected=0  got=0
-[PASS]  nums=[1,2,3,4,5]       target=3  expected=2  got=2
-[PASS]  nums=[4,5,6,7,0,1,2]  target=8  expected=-1  got=-1
-
-8/8 tests passed.
-```
-
 ### Expected Output — LC 704
 ```
 [PASS]  nums=[-1,0,3,5,9,12]  target=9   expected=4  got=4
@@ -251,20 +228,6 @@ g++ -std=c++17 -o out 05_Binary_Search/33_SearchInRotatedSortedArray.cpp; .\out
 [PASS]  nums=[1,3,5,7,9]       target=9   expected=4  got=4
 [PASS]  nums=[1,3,5,7,9]       target=5   expected=2  got=2
 [PASS]  nums=[-10,-5,0,3,7]    target=-20 expected=-1  got=-1
-
-8/8 tests passed.
-```
-
-### Expected Output — LC 33
-```
-[PASS]  nums=[4,5,6,7,0,1,2]  target=0  expected=4  got=4
-[PASS]  nums=[4,5,6,7,0,1,2]  target=3  expected=-1  got=-1
-[PASS]  nums=[1]               target=0  expected=-1  got=-1
-[PASS]  nums=[1]               target=1  expected=0  got=0
-[PASS]  nums=[3,1]             target=1  expected=1  got=1
-[PASS]  nums=[4,5,6,7,0,1,2]  target=4  expected=0  got=0
-[PASS]  nums=[1,2,3,4,5]       target=3  expected=2  got=2
-[PASS]  nums=[4,5,6,7,0,1,2]  target=8  expected=-1  got=-1
 
 8/8 tests passed.
 ```
@@ -293,6 +256,20 @@ g++ -std=c++17 -o out 05_Binary_Search/33_SearchInRotatedSortedArray.cpp; .\out
 [PASS]  nums=[4,5,6,7,0,1,2]  target=4  expected=0  got=0
 [PASS]  nums=[1,2,3,4,5]       target=3  expected=2  got=2
 [PASS]  nums=[4,5,6,7,0,1,2]  target=8  expected=-1  got=-1
+
+8/8 tests passed.
+```
+
+### Expected Output — LC 875
+```
+[PASS]  piles=[3,6,7,11]          h=8   expected=4  got=4
+[PASS]  piles=[30,11,23,4,20]     h=5   expected=30  got=30
+[PASS]  piles=[30,11,23,4,20]     h=6   expected=23  got=23
+[PASS]  piles=[5]                 h=1   expected=5  got=5
+[PASS]  piles=[10]                h=5   expected=2  got=2
+[PASS]  piles=[1,1,1,1]           h=4   expected=1  got=1
+[PASS]  piles=[3,6,7,11]          h=100 expected=1  got=1
+[PASS]  piles=[312884470]         h=312884469  expected=2  got=2
 
 8/8 tests passed.
 ```
