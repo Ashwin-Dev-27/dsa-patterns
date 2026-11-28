@@ -31,7 +31,7 @@ Every solution is:
 | 🟡 Medium | 29 / 2152 &nbsp; `░░░░░░░░░░` |
 | 🔴 Hard | 1 / 994 &nbsp; `░░░░░░░░░░` |
 
-<sub>🕐 Last synced: 27 Nov 2026 · 11:12 UTC</sub>
+<sub>🕐 Last synced: 28 Nov 2026 · 10:44 UTC</sub>
 <!-- LEETCODE-STATS:END -->
 
 ---
